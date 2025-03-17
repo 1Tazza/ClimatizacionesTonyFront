@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+.App {
+    text-align: center;
+    background-color: #03010ef3;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
+

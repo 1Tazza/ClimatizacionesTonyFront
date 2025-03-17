@@ -1,0 +1,224 @@
+.container{
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex
+;flex-direction: column;
+padding: 0rem 0rem 3.7rem;
+    width: 90%;
+}
+
+.sectionCont {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+
+.container p{
+    margin: 0
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.bg1{
+    background-image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742202640/Tony%20Clima/n82yriszihuqmhngmogk.jpg" ), linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.58));
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center
+}
+
+.bg2{
+    background-image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742202618/Tony%20Clima/k12u1hvjhyd8pp3jo2hn.jpg" ), linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.58));
+    
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center
+}
+
+.bg3{ 
+    background-image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742202624/Tony%20Clima/tlbqifn1mdnqgk2pqzux.jpg" ), linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.58));
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center
+}
+
+.bg4{ 
+    background-image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742202028/Tony%20Clima/v111mv1xxsoxvwdoj78r.jpg" ), linear-gradient(rgba(0, 0, 0, 0.686), rgba(0, 0, 0, 0.58));
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center
+}
+
+.orange{
+    color: #F98F1E;
+    border-color: #F98F1E;
+}
+
+.blue{
+    color: #2683FB;
+    border-color: #2683FB;
+}
+
+.line{
+    width: 100%;
+    height: 0.3px;
+    background-color: rgb(255, 255, 255);
+    margin: 12px 10px;
+}
+
+.finalLine{
+    height: 0.3px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 123px 0px;
+}
+
+.fLineCont{
+    width: 100%;
+}
+
+.sectionText{
+    font-size: 21px;
+    font-style: italic;
+}
+
+.item{
+    padding: 5rem 0rem;
+}
+
+.text1{
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 5px 3.7px #00000068;
+    letter-spacing: 3px;
+    padding: 0rem 2.5rem;
+    
+}
+
+.title{
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0px 5px 3.7px #ffffff38;
+    padding: 0rem 2.5rem;
+    margin: 0.3rem 0rem 0.2rem;
+    
+}
+
+.description{
+    font-size: 17px;
+    padding: 0rem 2.5rem;
+    margin: 0.2rem 0rem 1.5rem;
+}
+
+.buttonCont{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button{
+    font-size: 15px;
+    margin: 0rem 2.5rem;
+    
+    width: 7rem;
+    background-color: #00000095;
+    padding: 0.4rem 0rem;
+    border-radius: 9px;
+    border: 1px solid ;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 550px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem 3.7rem;
+        width: 100%;
+    }
+
+    .line{
+        width: 100%;
+        height: 0.3px;
+        background-color: rgb(255, 255, 255);
+        margin: 12px 10px;
+    }
+
+    .finalLine{
+        height: 0.3px;
+        background-color: rgb(255, 255, 255);
+        margin: 20px 123px 0px;
+    }
+
+    .fLineCont{
+        width: 100%;
+    }
+
+    .sectionText{
+        font-size: 21px;
+        font-style: italic;
+    }
+
+    .bg1{
+        box-shadow: inset 0px 8px 7px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .bg4{
+        box-shadow: inset 0px -8px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .item{
+        padding: 2rem 0rem;
+    }
+
+    .text1{
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0px 5px 3.7px #00000068;
+        letter-spacing: 3px;
+        padding: 0rem 2.5rem;
+        
+    }
+
+    .title{
+        font-size: 25px;
+        font-weight: 600;
+        text-shadow: 0px 5px 3.7px #ffffff38;
+        padding: 0rem 2.5rem;
+        margin: 0.3rem 0rem 0.2rem;
+        
+    }
+
+    .description{
+        font-size: 17px;
+        padding: 0rem 2.5rem;
+        margin: 0.2rem 0rem 1.5rem;
+    }
+
+    .buttonCont{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .button{
+        font-size: 15px;
+        margin: 0rem 2.5rem;
+        
+        width: 7rem;
+        background-color: #00000095;
+        padding: 0.4rem 0rem;
+        border-radius: 9px;
+        border: 1px solid ;
+        text-align: center;
+        font-style: italic;
+    }
+
+    
+
+}

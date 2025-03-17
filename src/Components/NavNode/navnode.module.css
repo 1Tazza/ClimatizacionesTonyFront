@@ -1,0 +1,161 @@
+.container{
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 0rem 4rem;
+    text-align: left;
+}
+
+.navNode{
+    background-color: #12151B;
+    padding: 0rem 2rem;
+    position: fixed;
+    /* width: 100%; */
+    top: 0;
+    z-index: 100;
+    height: 100vh;
+    overflow-y: auto;
+    transition: left 0.4s ease-in-out;
+    
+    /* visibility: hidden; */
+    
+}
+
+.link{
+    all: unset;
+}
+
+.link:hover{
+    cursor: pointer;
+}
+
+.open {
+    /* visibility: visible !important; 
+    left: 0; */
+}
+
+.crossCont{
+    display: flex;
+    justify-content: end;
+}
+
+.container p{
+    margin: 0
+}
+
+.sectCont{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.imgCont{
+    background-color: #D9D9D9;
+    padding: 3px 4px 0px;
+    align-content: center;
+    border-radius: 9px;
+}
+
+.imgCont img{
+    height: 31px;
+    width: 31px;
+}
+
+.itemText{
+    align-content: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding-left: 0.5rem;
+}
+
+.item1{
+    border-bottom: 1px solid gray;
+}
+
+.item4 .imgCont {
+    height: 35px; 
+    width: 31px; 
+    align-content: center;
+}
+
+.img4{
+    height: 31px !important; 
+    width: 19px !important; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.subTitle{
+    padding-bottom: 0.6rem;
+    letter-spacing: 1px;
+}
+
+.text{
+    font-weight: 600;
+    margin: 1.5rem 0rem;
+}
+
+.conoceSect{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 1rem;
+    border: 2px solid white;
+    border-radius: 9px;
+    margin-top: 1.5rem 
+}
+
+.conoceImg{
+    padding-right: 1rem;
+}
+
+.white{
+    color: #F98F1E;
+    border-color: #F98F1E;
+}
+
+.buttonCont{
+    display: flex;
+}
+
+.button{
+    font-size: 15px;
+    width: 7rem;
+    background-color: #000000b0;
+    padding: 0.4rem 0rem;
+    border-radius: 9px;
+    border: 1px solid;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 0px 3px 3.7px #ffffff38;
+}
+
+
+
+@media (max-width: 550px) {
+    .container{
+        
+        width: 100%;
+    }
+
+    .subTitle{
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+
+    .text{
+        font-size: 17px;
+    }
+
+    .conoceText{
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+}

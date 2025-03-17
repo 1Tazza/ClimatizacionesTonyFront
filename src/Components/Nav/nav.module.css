@@ -1,0 +1,66 @@
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    background: transparent; /* Inicialmente transparente */
+    transition: 0.3s ease;
+    z-index: 3;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+    padding: 0rem 1.5rem;
+    align-items: center;
+}
+
+.container p {
+    margin: 0;
+}
+
+.cinzel{
+    font-family: "Cinzel", serif;
+}
+
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+
+.burgerNav{
+    padding-top: 0.3rem;
+}
+
+.logoCont{
+    width: 100%; 
+    display: flex ; 
+    justify-content: center;
+    padding: 0.3rem 0.45rem 0rem 0rem;
+}
+
+.nav.scrolled {
+    background: #06001D; 
+}
+
+.logo{
+    /* width: 55px;
+    height: 55px; */
+    width: 38px; 
+    height: 39px;
+}
+
+.titleCont{
+    padding: 0.3rem 0rem 0rem 0.5rem;
+    text-align: left;
+}
+
+@media (max-width: 550px) {
+
+   .logo{
+    width: 38px; height: 39px;
+   }
+
+
+}

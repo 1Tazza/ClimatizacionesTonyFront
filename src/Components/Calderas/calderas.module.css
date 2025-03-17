@@ -1,0 +1,267 @@
+.container{
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex
+; flex-direction: column;
+    width: 100%;padding: 0rem 0rem 3.5rem;
+    display: none;
+}
+
+.container p{
+    margin: 0
+}
+
+.sectionCont {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+}
+
+.band{
+    padding-bottom: 8.5rem;
+}
+
+
+.peisa{
+    width: 11rem;
+    height: 7rem;
+}
+
+.baxi{
+    width: 11.5rem;
+    height: 4.5rem;
+}
+
+.ariston{
+    width: 12.7rem;
+    height: 13rem;
+}
+
+.caldaia{
+    width: 14rem;
+    height: 4rem;
+    background-color: white;
+}
+
+.ferroli{
+    width: 11.3rem;
+    height: 5.5rem;
+}
+
+.orange{
+    color: #F98F1E;
+    border-color: #F98F1E;
+}
+
+.buttonCont{
+    display: flex;
+    justify-content: center;
+}
+
+.finalLine{
+    height: 0.3px;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 105px 0px;
+}
+
+.fLineCont{
+    width: 100%;
+}
+
+
+/* /////////// */
+
+
+.line{
+    width: 100%;
+    height: 0.3px;
+    background-color: rgb(255, 255, 255);
+    margin: 12px 10px;
+}
+
+.sectionText{
+    font-size: 21px;
+    font-style: italic;
+}
+
+.bandCont{
+    position: absolute; 
+    margin-top: 7rem;  
+    padding: 1rem 2rem 1rem; 
+    font-size: 27px; 
+    font-weight: 300; 
+    background-color: black;
+}
+
+.brandsCont{
+    display: flex;
+    justify-content: center;
+}
+
+.brandsBg{
+  background-Image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1729848383/Climatizaciones/ara2zkwsfadt5bb9uhay.jpg"), linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58));
+  width: 90%;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0rem;
+  border-radius: 9px;
+  /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
+  box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgCont1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.imgCont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4rem 0rem 0rem;   
+}
+
+.imgCont3{
+    margin: -0.5rem 0rem;
+}
+
+.button{
+    font-size: 15px;
+    width: 9rem;
+    background-color: #000000b0;
+    padding: 0.5rem 0rem;
+    border-radius: 9px;
+    border: 1px solid ;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 550px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 0rem 3.5rem;
+        width: 100%;
+    }
+
+    .line{
+        width: 100%;
+        height: 0.3px;
+        background-color: rgb(255, 255, 255);
+        margin: 12px 10px;
+    }
+    
+    .sectionText{
+        font-size: 21px;
+        font-style: italic;
+    }
+
+    .bandCont{
+        position: absolute; 
+        margin-top: 7rem;  
+        padding: 1rem 2rem 1rem; 
+        font-size: 27px; 
+        font-weight: 300; 
+        background-color: black;
+    }
+
+    .brandsCont{
+        display: flex;
+        justify-content: center;
+    }
+
+    .brandsBg{
+      background-Image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1729848383/Climatizaciones/ara2zkwsfadt5bb9uhay.jpg"), linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58));
+      width: 90%;
+      background-blend-mode: overlay;
+      background-size: cover;
+      background-position: center;
+      padding: 5rem 0rem;
+      border-radius: 9px;
+      /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
+      box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 6px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .brands{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgCont1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .imgCont2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 4rem 0rem 0rem;   
+    }
+
+    .imgCont3{
+        margin: -0.5rem 0rem;
+    }
+
+
+    .peisa{
+        width: 7.5rem;
+        height: 4.5rem;
+        border-radius: 9px;
+    }
+    
+    .baxi{
+        width: 8rem;
+        height: 3.5rem;
+    }
+    
+    .ariston{
+        width: 10rem;
+        height: 11rem;
+    }
+    
+    .caldaia{
+        width: 8rem;
+        height: 2.5rem;
+        background-color: white;
+        border-radius: 9px;
+    }
+    
+    .ferroli{
+        width: 7rem;
+        height: 3.5rem;
+    }
+
+    .button{
+        font-size: 15px;
+        width: 9rem;
+        background-color: #000000b0;
+        padding: 0.5rem 0rem;
+        border-radius: 9px;
+        border: 1px solid ;
+        text-align: center;
+        font-style: italic;
+    }
+    
+
+}
+
+
+@media (max-width: 350px) {
+   .bandCont{
+    font-size: 24px;
+   }
+}

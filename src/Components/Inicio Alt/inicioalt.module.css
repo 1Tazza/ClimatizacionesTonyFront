@@ -1,0 +1,122 @@
+.container{
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    }
+
+.bg{
+    position: relative; /* Para que el ::before se posicione relativo a este contenedor */
+    width: 100%;
+    overflow: hidden;
+    
+}   
+
+.bg::before{
+    content: ""; /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742203094/Tony%20Clima/lhrti9jtypnvjfrnc0dc.jpg"), linear-gradient(rgba(3, 1, 14, 0.74), rgba(3, 1, 14, 0.74));
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0; /* Mantiene la imagen detrás del contenido */;
+    animation: zoomIn 8s ease-in-out infinite alternate;
+}
+
+/* backdrop-filter: blur(3px); background-color: rgba(0, 0, 0, 0.65); opacity: 1; */
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3); 
+    }
+} 
+
+.bg > * { 
+    position: relative; /* Asegura que el contenido quede por encima */
+    z-index: 1;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+@media (max-width: 550px) {
+
+    .container{
+        padding: 7rem 0rem 5rem;
+    }
+
+    .h1{
+        padding-bottom: 0.5rem;
+    }
+
+    .h1 h1{
+    margin: 0;
+    font-size: 40px; 
+    text-shadow: 0px 5px 3.7px #ffffff38;
+    letter-spacing: 1px;
+    
+    }
+
+    .p p{
+        font-size: 20px;
+        margin: 1.5rem 2.4rem 1.5rem;
+        text-shadow: 0px 5px 3.7px #00000068;
+    }
+
+    .p span{
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: row;
+        margin: 1rem 0rem 2.5rem;;
+        justify-content: space-evenly;
+    }
+
+    .text{
+        font-size: 15px;
+        font-weight: bold;
+        width: 100px;
+        text-shadow: 0px 5px 3.7px #ffffff2d
+    }
+
+    .logo img{
+        width: 74px;
+    height: 74px;
+    }
+
+    .buttonCont{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        font-size: 17px;
+        font-weight:500;
+        width: 10rem;
+        background-color: #2783FB;
+        padding: 0.4rem 0rem;
+        border-radius: 17px;
+        
+    }
+
+    .button :hover{
+        cursor: pointer;
+    }
+
+    .button span{
+        font-size: 19px;
+    }
+}
