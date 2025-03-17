@@ -5,7 +5,7 @@ import axios from "axios"
 
 export default function Contacto(){
     
-    const [captchaValido, setCaptchaValido] = useState(false)
+    /* const [captchaValido, setCaptchaValido] = useState(false) */
     const [touched, setTouched] = useState({});
     const [errors,setErrors] = useState({})
 
@@ -17,9 +17,9 @@ export default function Contacto(){
         message: ""
         });
 
-    function onChange(value) {
+    /* function onChange(value) {
         setCaptchaValido(true)
-      }
+      } */
 
     function onClick(e){
         setTouched({...touched, [e.target.name]: true})
