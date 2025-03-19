@@ -12,6 +12,12 @@ export default function Services(){
 
    return(<div className={c.services}>
 
+    <div className={c.sectionContDesk}>
+      <div className={c.lineLeft}></div>
+      <p className={c.sectionText}>SERVICIOS</p>
+      <div className={c.lineRight}></div>
+    </div>
+
    <div className={c.container}>
     
     <div className={c.sectionCont}>
@@ -20,7 +26,7 @@ export default function Services(){
       <div className={c.line}></div>
     </div>
 
-   <div className={c.itemsGrp1}>
+   <div className={`${c.itemsGrp} ${c.itemsGrp1}`}>
   
     <div className={`${c.item} ${c.bg1}`}>
       <div className={`${c.text1} ${c.blue}`}>
@@ -32,7 +38,7 @@ export default function Services(){
       </div>
 
       <div className={c.description}>
-        <p>Instalación, reparación y mantenimiento de Aire Acondicionado.</p>
+        <p>Instalación, reparación y mantenimiento de Aire Acondicionado. <br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>
@@ -51,7 +57,7 @@ export default function Services(){
       </div>
 
       <div className={c.description}>
-        <p>Instalación, reparación y mantenimiento de Calderas de TODAS las Marcas!</p>
+        <p>Instalación, reparación y mantenimiento de Calderas de TODAS las Marcas! <br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>
@@ -62,7 +68,7 @@ export default function Services(){
     </div>
 
 
-   <div className={c.itemsGrp2}>
+   <div className={`${c.itemsGrp} ${c.itemsGrp2}`}>
 
    <div className={`${c.item} ${c.bg3}`}>
       <div className={`${c.text1} ${c.blue}`}>
@@ -73,8 +79,8 @@ export default function Services(){
         <p>Heladeras</p>
       </div>
 
-      <div className={c.description}>
-        <p>Reparación de Heladeras. <br /><br /><br /></p>
+      <div className={`${c.description} ${c.fridgeDiv}`}>
+        <p>Reparación de Heladeras. <br/><br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>
@@ -93,7 +99,7 @@ export default function Services(){
       </div>
 
       <div className={c.description}>
-        <p>Instalación, Reparación y Mantenimiento de Calefactores de Tiro Balanceado.</p>
+        <p>Instalación, Reparación y Mantenimiento de Calefactores de Tiro Balanceado. <br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>

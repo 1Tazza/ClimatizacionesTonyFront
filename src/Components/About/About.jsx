@@ -16,6 +16,7 @@ export default function About() {
 
       <div className={c.text}>
         
+        <div className={c.aboutTextResp}>¿Quiénes somos?</div>
         
         <p><span className={c.italic}>CLIMATIZACIONES TONY</span> es una organización, conformada por técnicos especialistas con más de <span>15 años de Experiencia</span>. Trabajamos en conjunto para resolver <span>TUS PROBLEMAS</span> de Climatización.</p>
 

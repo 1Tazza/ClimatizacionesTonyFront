@@ -8,10 +8,14 @@ padding: 0rem 0rem 3.7rem;
     width: 90%;
 }
 
-.sectionCont {
+/* ////// */.sectionContDesk {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.5rem;
+    align-items: center;
+}
+
+/* ////// */.sectionCont {
+    display: none;
 }
 
 .container p{
@@ -67,21 +71,36 @@ padding: 0rem 0rem 3.7rem;
     border-color: #2683FB;
 }
 
-.line{
+/* ////// */
+.lineLeft{
     width: 100%;
     height: 0.3px;
     background-color: rgb(255, 255, 255);
-    margin: 12px 10px;
+    margin: 12px 10px 12px 0px;
 }
+
+.lineRight{
+    width: 100%;
+    height: 0.3px;
+    background-color: rgb(255, 255, 255);
+    margin: 12px 0px 12px 10px;
+}
+
 
 .finalLine{
     height: 0.3px;
     background-color: rgb(255, 255, 255);
-    margin: 20px 123px 0px;
+
+    /* ////// */
+    width: 400px; 
+    margin-top: 1.7rem;
 }
 
 .fLineCont{
     width: 100%;
+    /* ////// */
+    display: flex;
+    justify-content: center;
 }
 
 .sectionText{
@@ -89,32 +108,56 @@ padding: 0rem 0rem 3.7rem;
     font-style: italic;
 }
 
+/* ////// */
+.itemsGrp{
+    display: flex;
+    flex-direction: row;
+}
+
+/* ////// */
+.bg1{
+    box-shadow: inset 0px 8px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bg2{
+    box-shadow: inset 0px 8px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bg3{
+    box-shadow: inset 0px -8px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.bg4{
+    box-shadow: inset 0px -8px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+
 .item{
-    padding: 5rem 0rem;
+    padding: 3.7rem 0rem;
 }
 
 .text1{
-    font-size: 15px;
-    font-weight: 600;
-    text-shadow: 0px 5px 3.7px #00000068;
-    letter-spacing: 3px;
-    padding: 0rem 2.5rem;
+    font-size: 18px; 
+    font-weight: 600; 
+    text-shadow: 0px 5px 3.7px #00000068; 
+    letter-spacing: 3px; 
+    padding: 0rem 4rem; 
     
 }
 
 .title{
-    font-size: 25px;
-    font-weight: 600;
-    text-shadow: 0px 5px 3.7px #ffffff38;
-    padding: 0rem 2.5rem;
+    font-size: 28px; 
+    font-weight: 600; 
+    text-shadow: 0px 5px 3.7px #ffffff38; 
+    padding: 0rem 4rem; 
     margin: 0.3rem 0rem 0.2rem;
     
 }
 
 .description{
-    font-size: 17px;
-    padding: 0rem 2.5rem;
-    margin: 0.2rem 0rem 1.5rem;
+    font-size: 21px; 
+    padding: 0rem 4rem; 
+    margin: 0.2rem 0rem 3rem; 
 }
 
 .buttonCont{
@@ -123,24 +166,104 @@ padding: 0rem 0rem 3.7rem;
 }
 
 .button{
-    font-size: 15px;
-    margin: 0rem 2.5rem;
-    
-    width: 7rem;
-    background-color: #00000095;
-    padding: 0.4rem 0rem;
-    border-radius: 9px;
-    border: 1px solid ;
-    text-align: center;
+    font-size: 17px; 
+    margin: 0rem 4rem; 
+    width: 7.8rem; 
+    background-color: #00000095; 
+    padding: 0.4rem 0rem; 
+    border-radius: 9px; 
+    border: 1px solid; 
+    text-align: center; 
     font-style: italic;
+    transition: transform 0.2s ease-in-out;
 }
 
-@media (max-width: 550px) {
+.button:hover{
+    cursor: pointer;
+    background-color: #000000de; 
+    transform: translateY(-5px);
+}
+
+/* ////// */
+.fridgeDiv br{
+    display: none;
+}
+
+/* ////// */
+.bg1 br{
+    display: none;
+}
+
+/* ////// */
+.bg2 br{
+    display: none;
+}
+
+/* ////// */
+.bg4 br{
+   display: none;
+}
+
+/* ////// */
+.bg3 .buttonCont{
+    margin-top: auto;
+}
+
+@media (max-width: 1250px) {
+
+    .item{
+        padding: 3rem 0rem;
+    }
+
+    .text1{
+        padding: 0rem 3rem; 
+        
+    }
+    
+    .title{
+        padding: 0rem 3rem; 
+        
+    }
+    
+    .description{
+        padding: 0rem 3rem; 
+    }
+
+    .button{
+        margin: 0rem 3rem; 
+    }
+    
+}
+
+@media (max-width: 1080px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .item{
+        padding: 3rem 0rem;
+    }
+}
+
+
+
+@media (max-width: 878px) {
     .container{
         display: flex;
         flex-direction: column;
         padding: 0rem 0rem 3.7rem;
-        width: 100%;
+    }
+
+    .sectionContDesk{
+        display: none;
+    }
+
+    .sectionCont {
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+        margin-bottom: 1.5rem;
     }
 
     .line{
@@ -154,6 +277,7 @@ padding: 0rem 0rem 3.7rem;
         height: 0.3px;
         background-color: rgb(255, 255, 255);
         margin: 20px 123px 0px;
+        width: 300px;
     }
 
     .fLineCont{
@@ -172,6 +296,7 @@ padding: 0rem 0rem 3.7rem;
     .bg4{
         box-shadow: inset 0px -8px 10px 0px rgba(0, 0, 0, 0.5);
     }
+
 
     .item{
         padding: 2rem 0rem;
@@ -219,6 +344,111 @@ padding: 0rem 0rem 3.7rem;
         font-style: italic;
     }
 
+    .fridgeDiv br{
+        display: unset;
+    }
     
+    /* ////// */
+    .bg3 .buttonCont{
+        margin-top: 0;
+    }
+
+    @media (max-width: 712px) {
+
+        .bg2{
+            box-shadow: unset;
+        }
+        
+        .bg3{
+            box-shadow: unset;
+        }        
+
+        .bg1 br{
+            display: unset;
+        }
+        
+        .bg2 br{
+            display: unset;
+        }
+        
+        .bg4 br{
+           display: unset;
+        }
+
+        .itemsGrp{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item{
+            padding: 2.7rem 0rem;
+        }
+
+        .description{
+            font-size: 17px;
+            padding: 0rem 7.5rem 0rem 3.5rem;
+            margin: 0.2rem 0rem 2.5rem;
+        }
+
+        .text1{
+            padding: 0rem 7.5rem 0rem 3.5rem;
+            
+        }
+        
+        .title{
+            padding: 0rem 7.5rem 0rem 3.5rem;
+            
+        }
+    
+        .button{
+            margin: 0rem 3.5rem; 
+        }
+
+        
+    }
+
+    @media (max-width: 550px) {
+
+        .item{
+            padding: 2rem 0rem;
+        }
+
+        .description{
+            font-size: 17px;
+            padding: 0rem 2.5rem;
+            margin: 0.2rem 0rem 1.5rem;
+        }
+
+        .text1{
+            padding: 0rem 2.5rem;
+            
+        }
+        
+        .title{
+            padding: 0rem 2.5rem;
+            
+        }
+    
+        .button{
+            margin: 0rem 2.5rem; 
+        }
+
+    }
+
+    @media (max-width: 440px) {
+
+    .bg1 br{
+        display: none;
+    }
+    
+    .bg2 br{
+        display: none;
+    }
+    
+    .bg4 br{
+       display: none;
+    }
+
+    }
 
 }

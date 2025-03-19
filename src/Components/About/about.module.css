@@ -19,22 +19,28 @@
 
 
 .imgAbout{
-    width: 30rem;
-    height: 20rem;
+    width: 25rem;
+    height: 14rem;
     border-radius: 9px;
-    filter:brightness(0.3)
+    filter: brightness(0.7);
+    /* ////// */  image-rendering: -webkit-optimize-contrast;
 }
 
 .imgCont{
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    /* ////// */ 
+    width: 50%;
+    margin-right: 3rem;
 }
 
 .aboutText{
-    position: absolute;
-    z-index: 2;
+    display: none;
+}
+
+.aboutTextResp{
     text-shadow: 0px 5px 3.7px #00000068;
     font-size: 27px;
     font-weight:600 ;
@@ -44,10 +50,23 @@
 .text {
     font-size: 19px;
     font-weight:350;
+    
+
+    /* ////// */ 
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 1rem;
 }
 
 .text p {
-    padding: 0.3rem 1.5rem;
+    padding: 0px;
+
+    /* ////// */ 
+    margin: 1rem 2rem 1rem 0rem;
+    width: 400px;
 }
 
 .text span{
@@ -58,8 +77,17 @@
     font-style: italic;
 }
 
+@media (max-width: 1025px) {
+    
+    .imgAbout{
+        width: 20rem;
+        height: 13rem;
+    }
 
-@media (max-width: 550px) {
+}
+
+
+@media (max-width: 878px) {
     .about{
         display: flex
         ;
@@ -78,7 +106,10 @@
         width: 20rem;
         height: 11rem;
         border-radius: 9px;
-        filter:brightness(0.3)
+        filter:brightness(0.3);
+
+        /* ////// */ 
+        image-rendering: unset;
     }
 
     .imgCont{
@@ -86,6 +117,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        /* ////// */ 
+        width: unset;
+        margin-right: 0rem;
+    }
+
+    .aboutTextResp{
+        display: none;
     }
 
     .aboutText{
@@ -95,15 +134,28 @@
         font-size: 27px;
         font-weight:600 ;
         letter-spacing: 1px;
+
+        display: unset;
     }
 
     .text {
         font-size: 19px;
         font-weight:350;
+
+        /* ////// */ 
+        display: unset;
+        text-align: center;
+        flex-direction: column;
+        width: unset;
+        margin-left: 0rem;
     }
 
     .text p {
-        padding: 0.3rem 1.5rem;
+        padding: 0.3rem 10rem;
+        
+        /* ////// */ 
+        margin: 1.1rem 0rem;
+        width: unset;
     }
 
     .text span{
@@ -115,6 +167,12 @@
     }
 
     
+}
+
+@media (max-width: 550px) {
+    .text p{
+    padding: 0.3rem 1.5rem;
+    }
 }
 
 

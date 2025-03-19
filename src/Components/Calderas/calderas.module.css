@@ -1,11 +1,12 @@
 .container{
-    max-width: 1252px;
+    /* max-width: 1252px;
     margin-left: auto;
-    margin-right: auto;
-    display: flex
-; flex-direction: column;
-    width: 100%;padding: 0rem 0rem 3.5rem;
-    display: none;
+    margin-right: auto; */
+
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    padding: 0rem 0rem 3.5rem;
 }
 
 .container p{
@@ -13,24 +14,24 @@
 }
 
 .sectionCont {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1.5rem;
+    /* /////////// */
+    display: none;
 }
 
 .band{
-    padding-bottom: 8.5rem;
+    /* /////////// */
+    padding-bottom: 6rem;
 }
 
 
 .peisa{
-    width: 11rem;
-    height: 7rem;
+    width: 9rem; 
+    height: 6rem; 
 }
 
 .baxi{
-    width: 11.5rem;
-    height: 4.5rem;
+    width: 9rem; 
+    height: 4.3rem;
 }
 
 .ariston{
@@ -39,14 +40,14 @@
 }
 
 .caldaia{
-    width: 14rem;
-    height: 4rem;
+    width: 10rem; 
+    height: 3rem;
     background-color: white;
 }
 
 .ferroli{
-    width: 11.3rem;
-    height: 5.5rem;
+    width: 9.3rem; 
+    height: 4.5rem;
 }
 
 .orange{
@@ -66,7 +67,8 @@
 }
 
 .fLineCont{
-    width: 100%;
+    /* /////////// */
+    display: none;
 }
 
 
@@ -87,11 +89,15 @@
 
 .bandCont{
     position: absolute; 
-    margin-top: 7rem;  
-    padding: 1rem 2rem 1rem; 
-    font-size: 27px; 
-    font-weight: 300; 
-    background-color: black;
+    margin-top: 5rem;
+    background-color: #0A0909;
+    font-weight: 300;
+
+    /* /////////// */
+    width: 100%;
+    padding: 1.5rem 0rem;
+    font-size: 30px;
+
 }
 
 .brandsCont{
@@ -101,19 +107,27 @@
 
 .brandsBg{
   background-Image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1729848383/Climatizaciones/ara2zkwsfadt5bb9uhay.jpg"), linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58));
-  width: 90%;
+  
+  /* /////////// */
+  width: 100%;
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
   padding: 5rem 0rem;
-  border-radius: 9px;
   /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
-  box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .brands{
     display: flex;
-    flex-direction: column;
+
+    /* /////////// */
+    flex-direction: row;
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 
 .imgCont1{
@@ -121,6 +135,9 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
+    /* /////////// */
+    display: contents;
 }
 
 .imgCont2{
@@ -128,11 +145,14 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 4rem 0rem 0rem;   
+
+    /* /////////// */
+    display: contents;
 }
 
 .imgCont3{
     margin: -0.5rem 0rem;
+
 }
 
 .button{
@@ -144,9 +164,17 @@
     border: 1px solid ;
     text-align: center;
     font-style: italic;
+    transition: transform 0.2s ease-in-out;
 }
 
-@media (max-width: 550px) {
+.button:hover{
+    cursor: pointer;
+    background-color: #000000de; 
+    transform: translateY(-5px);
+}
+
+
+@media (max-width: 1050px) {
     .container{
         display: flex;
         flex-direction: column;
@@ -166,6 +194,10 @@
         font-style: italic;
     }
 
+    .band{
+        padding-bottom: 8.5rem;
+    }    
+
     .bandCont{
         position: absolute; 
         margin-top: 7rem;  
@@ -173,6 +205,8 @@
         font-size: 27px; 
         font-weight: 300; 
         background-color: black;
+
+        width: unset;
     }
 
     .brandsCont{
@@ -190,11 +224,17 @@
       border-radius: 9px;
       /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
       box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 6px 10px rgba(0, 0, 0, 0.5);
+
+  
     }
 
     .brands{
         display: flex;
         flex-direction: column;
+        max-width: unset;
+        justify-content: unset;
+        align-items: unset;
+        padding-bottom: 0;
     }
 
     .imgCont1{
@@ -259,6 +299,18 @@
 
 }
 
+@media (max-width: 688px) {
+    .sectionCont {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1.5rem;
+    }
+
+    .fLineCont{
+        display: unset;
+        width: 100%;
+    }
+}
 
 @media (max-width: 350px) {
    .bandCont{
