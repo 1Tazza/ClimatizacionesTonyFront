@@ -2,6 +2,7 @@ import c from "./contacto.module.css";
 import { useState } from "react";
 import validations from "./validations";
 import axios from "axios"
+import phoneImg from "./logo1.svg"
 
 export default function Contacto(){
     
@@ -66,9 +67,12 @@ export default function Contacto(){
       <div className={c.line}></div>
     </div>
  
-    <div className={c.formContainer}>
+    
+    <div className={`${c.formContainer} `}>
+
     <div className={`${c.formSection} ${c.bg}`}>
          
+      <div className={c.formDesk}>
         <div className={c.items}>
         <div className={c.item}>
             <div>
@@ -143,6 +147,23 @@ export default function Contacto(){
     </div>
 
     </div>
+    </div>
+
+   
+    <div className={c.deskItemCont}>
+       
+       <div className={c.deskItem}>
+         
+         <div className={c.imgCont}>
+            <img className={c.phoneImg} src={phoneImg} alt="" />
+         </div>
+
+         <div className={c.callTime}>Horario de Atención de:<br />8 a 19 hs</div>
+
+       </div>
+
+    </div>
+
 
 
     </div>

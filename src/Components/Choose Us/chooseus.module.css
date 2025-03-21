@@ -1,33 +1,85 @@
 .container{
+    /* max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.bg{
+    background-Image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742202350/Tony%20Clima/jdsmfp4rpk2qwykq6dfy.jpg"), linear-gradient(rgb(0, 0, 0, 0.606), rgba(0, 0, 0, 0.606));
+    width: 100%;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
+    box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+
+    /* /////////// */
+    padding: 8rem 0rem;
+}
+
+/* /////////// */
+.content{
+    width: 570px;
     max-width: 1252px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    width: 100%;
-}
-
-.bg{
-    background-Image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742202350/Tony%20Clima/jdsmfp4rpk2qwykq6dfy.jpg"), linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58));
-        width: 100%;
-        background-blend-mode: overlay;
-        background-size: cover;
-        background-position: center;
-        padding: 5rem 0rem 5.5rem;
-        /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
-        box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+    align-items: center;
 }
 
 .container p{
     margin: 0
 }
 
+.title{
+    text-shadow: 0px 5px 3.7px #00000068;
+        font-size: 28px;
+        font-weight:650 ;
+        letter-spacing: 1px;
+        margin-bottom: 2.5rem;
+}
+
+.text {
+    font-size: 21px;
+    font-weight:300;
+
+    /* /////////// */
+    padding: 1rem 0rem 3rem;
+}
+
+.text p {
+    /* /////////// */
+    width: 500px;
+}
+
 .text span{
     font-weight: 600;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
+    .container{
+        max-width: 1252px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .bg{
+        background-Image: url("https://res.cloudinary.com/dapq4icmj/image/upload/v1742202350/Tony%20Clima/jdsmfp4rpk2qwykq6dfy.jpg"), linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58));
+        padding: 5rem 0rem 5.5rem;
+    }
+
+    /* /////////// */
+    .content{
+        width: unset;
+        max-width: unset;
+        display: unset;
+    }
+    
     .title{
         text-shadow: 0px 5px 3.7px #00000068;
             font-size: 25px;
@@ -39,9 +91,17 @@
     .text {
         font-size: 18px;
         font-weight:350;
+
+        padding: 0;
     }
     
+    
+    
+}
+
+@media (max-width: 590px) {
     .text p {
         padding:0.3rem 2rem;
+        width: unset;
     }
-}
+} 

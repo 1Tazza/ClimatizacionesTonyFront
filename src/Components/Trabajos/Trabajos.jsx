@@ -8,6 +8,12 @@ export default function Trabajos(){
 
    return(<div className={c.trabajos}>
 
+    <div className={c.sectionContDesk}>
+      <div className={c.lineLeft}></div>
+      <p className={c.sectionText}>TRABAJOS</p>
+      <div className={c.lineRight}></div>
+    </div>
+
    <div className={c.container}>
 
    <div className={c.sectionCont}>

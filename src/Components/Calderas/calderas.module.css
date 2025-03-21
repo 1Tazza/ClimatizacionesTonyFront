@@ -200,13 +200,13 @@
 
     .bandCont{
         position: absolute; 
-        margin-top: 7rem;  
-        padding: 1rem 2rem 1rem; 
+        
         font-size: 27px; 
         font-weight: 300; 
         background-color: black;
-
-        width: unset;
+        margin-top: 6rem;
+        padding: 1rem 0rem;
+        width: 100%;
     }
 
     .brandsCont{
@@ -299,7 +299,7 @@
 
 }
 
-@media (max-width: 688px) {
+@media (max-width: 635px) {
     .sectionCont {
         display: flex;
         flex-direction: row;
@@ -309,6 +309,12 @@
     .fLineCont{
         display: unset;
         width: 100%;
+    }
+
+    .bandCont{
+        width: unset;
+        margin-top: 7rem;  
+        padding: 1rem 2rem 1rem; 
     }
 }
 

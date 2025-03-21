@@ -6,27 +6,43 @@
 ;
     flex-direction: column;
     width: 90%;
+    padding: 0rem 0rem 4.5rem;
 }
 
 .container p{
     margin: 0
 }
 
-.sectionCont {
+/* ////// */.sectionContDesk {
     display: flex;
     flex-direction: row;
-    margin-bottom: 1.5rem;
+    align-items: center;
+
+    /* ////// */
+    padding-bottom: 1rem;
 }
 
-.line{
+/* ////// */.sectionCont {
+    display: none;
+}
+
+
+.lineLeft{
     width: 100%;
     height: 0.3px;
     background-color: rgb(255, 255, 255);
-    margin: 12px 10px;
+    margin: 12px 10px 12px 0px;
+}
+
+.lineRight{
+    width: 100%;
+    height: 0.3px;
+    background-color: rgb(255, 255, 255);
+    margin: 12px 0px 12px 10px;
 }
 
 .sectionText{
-    font-size: 21px;
+    font-size: 23px;
     font-style: italic;
 }
 
@@ -55,10 +71,18 @@
 .text {
     font-size: 19px;
     font-weight:350;
+
+    /* ////// */
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
 }
 
 .text p {
     padding:0.3rem 1.5rem 0.7rem;
+
+    /* ////// */
+    width: 520px;
 }
 
 .text span{
@@ -70,22 +94,37 @@
 }
 
 .finalLine{
+    /* ////// */
+    width: 142px;
+    margin: 11px 0px 0px;
     height: 0.3px;
     background-color: rgb(255, 255, 255);
-    margin: 11px 123px 0px;
 }
 
 .fLineCont{
-    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 550px) {
     .container{
         display: flex;
         flex-direction: column;
-        padding: 0rem 0rem 3rem;
         width: 100%;
+        padding: 0rem 0rem 3rem;
     }
+
+    .sectionContDesk{
+        display: none;
+    }
+
+    .sectionCont {
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+        margin-bottom: 1.5rem;
+    }
+
 
     .line{
         width: 100%;
@@ -109,7 +148,17 @@
         padding: 0.3rem 1.5rem;
     }
 
-    
+}
 
-    
+
+@media (max-width: 400px) {
+    .finalLine{
+        margin: 11px 123px 0px;
+        width: unset;
+    }
+
+    .fLineCont{
+        width: 100%;
+        display: unset;
+    }
 }
