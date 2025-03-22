@@ -2,8 +2,6 @@ import c from "./inicio.module.css"
 import logo1 from "./logo1.svg"
 import logo2 from "./logo2.svg"
 import logo3 from "./logo3.svg"
-/* import '@splidejs/splide/css';
-import { Splide, SplideSlide } from '@splidejs/react-splide'; */
 
 export default function Inicio(){
 

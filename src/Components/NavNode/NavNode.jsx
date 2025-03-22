@@ -58,7 +58,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img src={img2} alt="" />
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669002/Tony%20Clima/cjukko5ujyvijaqmmbr7.png" alt="" />
         </div>
 
         <div  className={c.itemText}>
@@ -74,7 +74,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img src={img3} alt="" />
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669005/Tony%20Clima/hd3gp1ty3aakgcbssnpy.png" alt="" />
         </div>
 
         <div  className={c.itemText}>
@@ -90,7 +90,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img className={c.img4} src={img4} alt="" />
+          <img className={c.img4} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669042/Tony%20Clima/xzkib3i9fxyysiyatqms.png" alt="" />
         </div>
 
         <div  className={c.itemText}>
@@ -100,14 +100,14 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img src={img5} alt="" />
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669025/Tony%20Clima/aqpn0f056lc3kcgpgctw.png" alt="" />
         </div>
 
         <div  className={c.itemText}>
           <p>CALEFACTOR DE TIRO BALANCEADO</p>
         </div>
       </div>
-    </div> */}
+    </div>  */}
 
     </div>
 

@@ -11,7 +11,15 @@ export default function OurWorksExtended() {
 
     return(<div id="trabajos">
       
+      
+      
       <div className={c.ourworks1}>
+
+      <div className={c.sectionContDesk}>
+      <div className={c.lineLeft}></div>
+      <p className={c.sectionText}>TRABAJOS</p>
+      <div className={c.lineRight}></div>
+      </div>
   
       <div className={c.margin}>
          <div className={c.sectionCont}>
@@ -135,7 +143,10 @@ export default function OurWorksExtended() {
        <div className={c.text}>
         <p><span className={c.italic}>CLIMATIZACIONES TONY</span> <br />Nuestra calidad y eficiencia se reflejan en cada trabajo. Como cliente, podés confiar en un servicio rápido y seguro para tu confort.</p>
        </div>
-
+        
+       <div className={c.fLineCont}>
+       <div className={c.finalLine}></div>
+      </div>
 
     </div> 
 

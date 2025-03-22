@@ -1,10 +1,26 @@
+/* ////// */.inicio{
+    display: flex;
+    justify-content: center;
+}
+
 .container{
-    max-width: 1252px;
+    max-width: 1152px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
+
+    /* ////// */
+    padding: 13rem 0rem 12rem;    
+    margin: 0rem 8rem;
+
+    /* ////// */
+    width: 100%;
     }
+
+/* ////// */.container p{
+    margin: 0;
+}
 
 .bg{
     position: relative; /* Para que el ::before se posicione relativo a este contenedor */
@@ -49,10 +65,122 @@
     text-decoration: underline;
 }
 
-@media (max-width: 550px) {
+
+
+
+
+.leftCont{
+    /* ////// */
+    /* width: 60%; */
+    
+    margin-left: 0rem;
+}
+
+/* ////// */ .h1{
+    padding-bottom: 0.7rem;
+}
+
+.h1 h1{
+margin: 0;
+font-size: 50px; 
+text-shadow: 0px 5px 3.7px #ffffff38;
+letter-spacing: 1px;
+text-align: left;
+
+}
+
+.p p{
+    font-size: 20px;
+/* ////// */ padding: 1rem 0rem;
+/* ////// */ margin-right: 22rem;
+text-shadow: 0px 5px 3.7px #00000068;
+text-align: left;
+
+/* ////// */
+width: 400px;
+}
+
+.p span{
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.items{
+display: flex;
+flex-direction: row;
+margin: 1rem 0rem 2.5rem;
+text-align: left;
+}
+
+.item1{margin-right: 2rem;}
+
+.item2{margin-right: 2rem;}
+
+.text{
+    font-size: 17px;
+    font-weight: bold;
+    width: 100px;
+    text-shadow: 0px 5px 3.7px #ffffff2d;
+    padding-top: 0.4rem;
+}
+
+.logo img{
+    width: 77px;
+    height: 77px;
+}
+
+.buttonCont{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.button{
+    font-size: 16px;
+    font-weight:500;
+    width: 10rem;
+    background-color: #2783FB;
+    padding: 0.4rem 0rem;
+    border-radius: 17px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #226dd0;
+}
+
+.button span{
+    font-size: 19px;
+}
+
+@media (max-width: 1050px) {
+    .inicio{
+        display: flex;
+        justify-content: unset;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .inicio{
+        display: flex;
+        justify-content: center;
+    }
 
     .container{
-        padding: 7rem 0rem 5rem;
+        padding: 8rem 0rem 7rem;
+        margin: unset;
+
+        width: unset;
+    }
+
+    .container p{
+        margin: unset;
+    }
+
+    .leftCont{
+        width: unset;
+        text-align: center;
+        margin-left: 0;
     }
 
     .h1{
@@ -64,13 +192,21 @@
     font-size: 40px; 
     text-shadow: 0px 5px 3.7px #ffffff38;
     letter-spacing: 1px;
-    
+    text-align: center;
+    }
+
+    .p{
+        padding: 0rem 0rem 1rem;
+        display: flex ; 
+        justify-content: center; 
     }
 
     .p p{
         font-size: 20px;
-        margin: 1.5rem 2.4rem 1.5rem;
+        margin: 1.5rem 2.4rem 0.5rem;
         text-shadow: 0px 5px 3.7px #00000068;
+        text-align: center;
+        padding: 0;
     }
 
     .p span{
@@ -81,15 +217,20 @@
     .items{
         display: flex;
         flex-direction: row;
-        margin: 1rem 0rem 2.5rem;;
+        margin: 2.5rem 0rem 2.5rem;;
         justify-content: space-evenly;
+        text-align: center;
     }
+
+    .item1{margin-right: 0rem;}
+
+.item2{margin-right: 0rem;}
 
     .text{
         font-size: 15px;
         font-weight: bold;
         width: 100px;
-        text-shadow: 0px 5px 3.7px #ffffff2d
+        text-shadow: 0px 5px 3.7px #ffffff2d;
     }
 
     .logo img{
@@ -112,9 +253,100 @@
         
     }
 
-    .button :hover{
-        cursor: pointer;
+
+    .button span{
+        font-size: 19px;
     }
+}
+
+@media (max-width: 485px) {
+
+    .container{
+        padding: 7rem 0rem 5rem;
+        margin: unset;
+
+        width: unset;
+    }
+
+    .container p{
+        margin: unset;
+    }
+
+    .leftCont{
+        width: unset;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .h1{
+        padding-bottom: 0.5rem;
+    }
+
+    .h1 h1{
+    margin: 0;
+    font-size: 40px; 
+    text-shadow: 0px 5px 3.7px #ffffff38;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+
+    .p{
+        padding: 0;
+    }
+
+    .p p{
+        font-size: 20px;
+        margin: 1.5rem 2.4rem 0.5rem;
+        text-shadow: 0px 5px 3.7px #00000068;
+        text-align: center;
+        padding: 0;
+        width: unset;
+    }
+
+    .p span{
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    .items{
+        display: flex;
+        flex-direction: row;
+        margin: 2.5rem 0rem 3.7rem;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .item1{margin-right: 0rem;}
+
+.item2{margin-right: 0rem;}
+
+    .text{
+        font-size: 15px;
+        font-weight: bold;
+        width: 100px;
+        text-shadow: 0px 5px 3.7px #ffffff2d;
+    }
+
+    .logo img{
+        width: 74px;
+    height: 74px;
+    }
+
+    .buttonCont{
+        display: flex;
+        justify-content: center;
+    }
+
+    .button{
+        font-size: 17px;
+        font-weight:500;
+        width: 10rem;
+        background-color: #2783FB;
+        padding: 0.4rem 0rem;
+        border-radius: 17px;
+        
+    }
+
 
     .button span{
         font-size: 19px;

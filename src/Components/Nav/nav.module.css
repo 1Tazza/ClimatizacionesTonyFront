@@ -77,6 +77,12 @@
     padding-right: 0.7rem;
 }
 
+/* ////// */
+.houseImg{
+    width: 46px; 
+    padding-right: 0.3rem;
+}
+
 .titleLogo{
     width: 210px;
 }
@@ -84,6 +90,18 @@
 .titleCont{
     padding: 0.6rem 0rem 0rem 0.5rem;
     text-align: left;
+}
+
+.link{
+    all: unset;
+}
+
+.linkT{
+    margin-right: 2rem ;
+}
+
+.link:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {
@@ -102,6 +120,9 @@
 }
 
 @media (max-width: 760px) {
+    .nav{
+        height: 65px;
+    }
 
     .logo{
         width: 38px; height: 39px;
@@ -109,6 +130,10 @@
     
        .titleLogo{
         width: 182px;
+    }
+
+    .titleCont{
+        padding: 0.4rem 0rem 0rem 0.5rem;
     }
 }
 

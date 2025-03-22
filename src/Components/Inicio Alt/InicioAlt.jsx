@@ -5,6 +5,8 @@ import logo3 from "./logo3.svg"
 
 export default function InicioAlt(){
 
+    
+
     const scrollToContact = () => {
         document.getElementById("contactSection").scrollIntoView({ behavior: "smooth" });
     };
@@ -13,6 +15,8 @@ export default function InicioAlt(){
     return(<div className={`${c.inicio} ${c.bg}`}>
  
     <div className={c.container}>
+    
+    <div className={c.leftCont}>
 
      <div className={c.h1}>
         <h1>TRABAJOS</h1>
@@ -20,7 +24,7 @@ export default function InicioAlt(){
 
      <div className={c.p}>
 
-        <p>En la sección <span>TRABAJOS de CLIMATIZACIONES TONY</span> podrás encontrar los resultados de contratar nuestros servicios.<br></br>Aire Acondicionado, Calderas, Heladeras y Calefactores!<br></br><div className={c.underline}>Estamos a su Servicio</div></p>
+     <p>En la sección <span>TRABAJOS de CLIMATIZACIONES TONY</span> podrás encontrar los resultados de contratar nuestros servicios.<br></br>Aire Acondicionado, Calderas, Heladeras y Calefactores!<br></br><div className={c.underline}>Estamos a su Servicio</div></p>
 
      </div>
 
@@ -54,7 +58,7 @@ Imperdibles</div>
      
      </div>
 
-     
+    </div>
 
     </div>
  

@@ -1,8 +1,10 @@
 import c from "./nav.module.css";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import burgerNavImg from "./burgerNav.svg"
 import NavNode from "../NavNode/NavNode";
-import titleLogo from "./titleLogo.svg"
+import titleLogo from "./titleLogo.svg";
+
 
 export default function Nav({home}){
 
@@ -69,14 +71,25 @@ export default function Nav({home}){
 
     </div>
 
-    <div onClick={toggleMenu} className={`${c.navItem} ${c.trabajosLink}`}>
+    {home ? <Link className={`${c.link} ${c.linkT}`} to="/" onClick={() => {window.scrollTo(0, 0);}}>
+    <div className={`${c.navItem} ${c.trabajosLink}`}>
+        
+        <img className={c.houseImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742667742/Tony%20Clima/cgheg92zagmwmcbxibu0.png" alt="" />
+
+        <div className={`${c.trabajos} ${c.poppins}`}>
+        Inicio
+        </div>
+    </div>
+    </Link> : <Link className={`${c.link}`} to="/trabajos" onClick={() => {window.scrollTo(0, 0);}}>
+    <div className={`${c.navItem} ${c.trabajosLink}`}>
+        
         <img className={c.valijaImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742589503/Tony%20Clima/afobsp6cqztalu4vxspc.png" alt="" />
 
         <div className={`${c.trabajos} ${c.poppins}`}>
         Trabajos
         </div>
     </div>
-    
+    </Link>} 
 
     </div>
     </div>
