@@ -1,8 +1,4 @@
 import c from "./navnode.module.css";
-/* import img2 from "./air icon.png";
-import img3 from "./Fridge Icon.png";
-import img4 from "./caldera png.png";
-import img5 from "./calefactor.png"; */
 import clientsImg from "./clients.svg";
 import { Link } from "react-router-dom";
 
@@ -50,8 +46,8 @@ export default function NavNode({isOpen, setIsOpen, home}){
         <p>Selecciona un Servicio y comunicate con un experto.</p>
     </div>
 
-
-    {/* <div className={`${c.item} ${c.item2}`}>
+{/* 
+    <div className={`${c.item} ${c.item2}`}>
       <div className={c.subTitle}>
         <p>CLIMATIZACIÓN</p>
       </div>
@@ -107,7 +103,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
           <p>CALEFACTOR DE TIRO BALANCEADO</p>
         </div>
       </div>
-    </div>  */}
+    </div>   */}
 
     </div>
 

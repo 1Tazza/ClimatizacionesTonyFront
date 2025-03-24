@@ -170,6 +170,11 @@ font-size: 17px;
     height: 2.7rem;
 }
 
+.form{
+    display: flex;
+        flex-direction: column;
+}
+
 .form input{
     all: unset;
     background-color: #03030394;
@@ -255,6 +260,22 @@ textarea {
     width: 1.8rem;
 }
 
+.warning{
+    width: 250px; text-align: left;
+}
+
+
+.captchaMsj{
+    padding-bottom: 0.9rem;
+}
+
+.iframe iframe{
+    transform: scale(0.8);
+    margin-left: -1.9rem;
+}
+
+.iframe > div > div { width: unset !important;}
+
 @media (max-width: 1030px) {
     .container{
 
@@ -268,7 +289,7 @@ textarea {
         background-blend-mode: overlay;
         background-size: cover;
         background-position: center;
-        padding: 1.7rem 0rem 5rem ;
+        padding: 1.7rem 0rem 3rem ;
         border-radius: 9px;
         /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
         box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 6px 10px rgba(0, 0, 0, 0.5);
@@ -324,6 +345,7 @@ textarea {
         flex-direction: column;
         align-items: center;
         margin: 0rem 1.7rem;
+
     }
     
     .form input{
@@ -410,7 +432,17 @@ textarea {
         justify-content: center;
     }
 
-    
+    .warning{
+       text-align: center;
+    }
+
+    .captchaMsj{
+        text-align: left !important;
+    }
+
+    .iframe iframe{
+        margin-left: 0;
+    }
 }
 
 
@@ -432,4 +464,7 @@ textarea {
         width: unset;
     }
 
+    .captchaMsj{
+        padding-bottom: 0.7rem;
+    }
 }

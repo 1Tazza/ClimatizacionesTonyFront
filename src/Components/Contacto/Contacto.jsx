@@ -1,12 +1,14 @@
 import c from "./contacto.module.css";
 import { useState } from "react";
 import validations from "./validations";
-import axios from "axios"
-import phoneImg from "./logo1.svg"
+import axios from "axios";
+import phoneImg from "./logo1.svg";
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 export default function Contacto(){
     
-    /* const [captchaValido, setCaptchaValido] = useState(false) */
+    const [captchaValido, setCaptchaValido] = useState(false) 
     const [touched, setTouched] = useState({});
     const [errors,setErrors] = useState({})
 
@@ -18,9 +20,9 @@ export default function Contacto(){
         message: ""
         });
 
-    /* function onChange(value) {
+    function onChange(value) {
         setCaptchaValido(true)
-      } */
+    } 
 
     function onClick(e){
         setTouched({...touched, [e.target.name]: true})
@@ -140,9 +142,16 @@ export default function Contacto(){
 
      <textarea name="message" value={form.message} id="" cols="30" rows="4" placeholder="Tu Problema..." onChange={(e) => handleInputChange(e)}></textarea>
      
+     <div className={c.cache}>
+       <ReCAPTCHA
+       sitekey="6LcJ9v0qAAAAAAKw97n4pUAfz-KU6QuQNVeHg5lh"
+       onChange={onChange}   className={c.iframe}/>
+     </div>
+     {captchaValido === false && <p className={`${c.captchaMsj} ${c.warning}`}>Por favor, marca la casilla.</p>}
+
      <div className={c.sendCont}>
        <div className={c.buttonCont}>
-       <button  onClick={handleSubmit}  id="sobre" className={c.button} disabled={Object.keys(errors).length > 0  /* || !captchaValido  */ || (form.name === "" || form.email === "")}    >Enviar Mensaje</button>   
+       <button  onClick={handleSubmit}  id="sobre" className={c.button} disabled={Object.keys(errors).length > 0  || !captchaValido  || (form.name === "" || form.email === "")}    >Enviar Mensaje</button>   
        </div>
     </div>
 
