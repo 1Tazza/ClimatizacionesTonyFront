@@ -1,12 +1,15 @@
 import c from "./contacto.module.css";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import validations from "./validations";
 import axios from "axios";
 import phoneImg from "./logo1.svg";
 import ReCAPTCHA from "react-google-recaptcha";
-
+import Footer from "../Footer/Footer";
 
 export default function Contacto(){
+    const recaptchaRef = useRef(null); // Referencia para el reCAPTCHA
+    const [captchaError, setCaptchaError] = useState("");
+    
     
     const [captchaValido, setCaptchaValido] = useState(false) 
     const [touched, setTouched] = useState({});
@@ -21,8 +24,14 @@ export default function Contacto(){
         });
 
     function onChange(value) {
-        setCaptchaValido(true)
+        setCaptchaValido(true);
+        setCaptchaError("");
     } 
+
+    function onExpired() {
+        setCaptchaValido(false);
+        setCaptchaError("El reCAPTCHA ha expirado, por favor verifica nuevamente.");
+    }
 
     function onClick(e){
         setTouched({...touched, [e.target.name]: true})
@@ -39,7 +48,12 @@ export default function Contacto(){
      }
 
      async function handleSubmit() {
-        try{
+            if (!captchaValido) {
+                setCaptchaError("Por favor, completa el reCAPTCHA antes de enviar.");
+                return;
+            }
+            
+            try{
            
             const response = await axios.post("https://climatizacionestonyback-production.up.railway.app/sendForm", form);
             
@@ -52,6 +66,9 @@ export default function Contacto(){
                  servicio: "",
                  message: ""
              });
+
+             recaptchaRef.current.reset();
+             setCaptchaValido(false);
             }
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
@@ -59,7 +76,7 @@ export default function Contacto(){
         }
     }
 
-   return(<div id="contactSection" className={c.conctacto}>
+   return(<><div id="contactSection" className={c.conctacto}>
  
    <div className={c.container}>
 
@@ -144,10 +161,12 @@ export default function Contacto(){
      
      <div className={c.cache}>
        <ReCAPTCHA
+       ref={recaptchaRef}
        sitekey="6LcJ9v0qAAAAAAKw97n4pUAfz-KU6QuQNVeHg5lh"
+       onExpired={onExpired}
        onChange={onChange}   className={c.iframe}/>
      </div>
-     {captchaValido === false && <p className={`${c.captchaMsj} ${c.warning}`}>Por favor, marca la casilla.</p>}
+     {captchaError && <p className={`${c.captchaMsj} ${c.warning}`}>{captchaError}</p>}
 
      <div className={c.sendCont}>
        <div className={c.buttonCont}>
@@ -180,5 +199,7 @@ export default function Contacto(){
 
    </div>
 
-   </div>)
+   </div>
+   <Footer/>
+   </>)
 }

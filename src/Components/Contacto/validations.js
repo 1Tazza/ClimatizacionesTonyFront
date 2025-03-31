@@ -7,7 +7,6 @@ export default function validations(input, touched) {
             errors.name = "Este campo es obligatorio."
         }
         else if(!input.name.match("^[ a-zA-ZñÑáéíóúÁÉÍÓÚ]+$")) {
-            console.log(touched.name)
             errors.name = "El nombre no debe contener números o caracteres especiales."
         }
     }

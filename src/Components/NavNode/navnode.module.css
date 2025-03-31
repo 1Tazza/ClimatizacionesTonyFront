@@ -23,6 +23,15 @@
     
 }
 
+.blur{
+    filter: blur(2px);
+    overflow-y: hidden;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
 .link{
     all: unset;
 }
@@ -31,14 +40,19 @@
     cursor: pointer;
 }
 
-.open {
-    /* visibility: visible !important; 
-    left: 0; */
-}
+/* .open {
+     visibility: visible !important; 
+    left: 0; 
+} */
 
 .crossCont{
     display: flex;
     justify-content: end;
+    padding-bottom: 1rem;
+}
+
+.crossCont svg{
+    cursor: pointer;
 }
 
 .container p{
@@ -111,7 +125,13 @@
     padding: 2rem 1rem;
     border: 2px solid white;
     border-radius: 9px;
-    margin-top: 1.5rem 
+    margin-top: 1.5rem;
+    width: 330px; 
+    
+}
+
+.conoceText{
+    margin-bottom: 1rem;
 }
 
 .conoceImg{
@@ -157,10 +177,14 @@
         font-size: 17px;
     }
 
+    .conoceSect{
+        width: unset;
+    }
+
     .conoceText{
         font-size: 15px;
         font-weight: 600;
-        margin-bottom: 1rem;
+       
     }
 
     .itemText{
