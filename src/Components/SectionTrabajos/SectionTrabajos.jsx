@@ -5,6 +5,7 @@ import OurWorksExtended from "../OurWorksExtended/OurWorksExtended";
 import Calderas from "../Calderas/Calderas";
 import c from "./sectiontrabajos.module.css";
 import Compromise from "../Compromise/Compromise";
+import SeoTrabajos from "../SeoTrabajos/SeoTrabajos";
 
 
 export default function SectionTrabajos(){
@@ -22,6 +23,8 @@ return(<div className={c.sectionTrabajos}>
        <Calderas/>
 
        <Compromise/>
+
+       <SeoTrabajos/>
        
        </div>)
 }

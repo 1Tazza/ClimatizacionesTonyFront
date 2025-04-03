@@ -10,7 +10,7 @@ export default function Services(){
     document.getElementById("calderaSection").scrollIntoView({ behavior: "smooth" });
   };
 
-   return(<div className={c.services}>
+   return(<div id="servicios" className={c.services}>
 
     <div className={c.sectionContDesk}>
       <div className={c.lineLeft}></div>

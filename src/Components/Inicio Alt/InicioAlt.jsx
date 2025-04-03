@@ -30,20 +30,20 @@ export default function InicioAlt(){
      <div className={c.items}>
         <div className={c.item1}>
             <span className={c.logo}>
-            <img src={logo1} alt="phone icon" />
+            <img src={logo1} alt="phone icono" />
             </span>
             <div className={c.text}>Atención Inmediata</div>
         </div>
         <div className={c.item2}>
             <span className={c.logo}>
-                <img src={logo2} alt="money icon" />
+                <img src={logo2} alt="money icono" />
             </span>
             <div className={c.text}>Ofertas
 Imperdibles</div>
         </div>
         <div className={c.item3}>
             <span className={c.logo}>
-                <img src={logo3} alt="community icon" />
+                <img src={logo3} alt="community icono" />
             </span>
             <div className={c.text}>Clientes Felices</div>
         </div>

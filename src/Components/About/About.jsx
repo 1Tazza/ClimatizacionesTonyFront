@@ -3,13 +3,13 @@ import c from "./about.module.css"
 export default function About() {
 
 
-    return(<div className={c.about}>
+    return(<div id="sobreNosotros" className={c.about}>
     
     <div  className={c.container}>
      
       <div className={c.imgCont}>
         
-        <img className={c.imgAbout} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742202028/Tony%20Clima/v111mv1xxsoxvwdoj78r.jpg" alt="" loading="lazy" />
+        <img className={c.imgAbout} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742202028/Tony%20Clima/v111mv1xxsoxvwdoj78r.jpg" alt="CLIMATIZACION SOBRE NOSOTROS" loading="lazy" />
         <div className={c.aboutText}>¿Quiénes somos?</div>
        
       </div>

@@ -5,6 +5,7 @@ import axios from "axios";
 import phoneImg from "./logo1.svg";
 import ReCAPTCHA from "react-google-recaptcha";
 import Footer from "../Footer/Footer";
+import Links from "../Links/Links"
 
 export default function Contacto(){
     const recaptchaRef = useRef(null); // Referencia para el reCAPTCHA
@@ -95,7 +96,7 @@ export default function Contacto(){
         <div className={c.items}>
         <div className={c.item}>
             <div>
-            <img className={c.mail} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729849752/Climatizaciones/msvpnvtafhg1ga6ampy0.png" alt="" />
+            <img className={c.mail} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729849752/Climatizaciones/msvpnvtafhg1ga6ampy0.png" alt="mail de contratista de aire acondicionado" />
             </div>
 
             <div className={c.itemText}>
@@ -106,7 +107,7 @@ export default function Contacto(){
 
         <div className={c.item}>
             <div>
-            <img className={c.wppImg}  src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848153/Climatizaciones/sxgo5xgsiqhu47mq1cek.png" alt="" />
+            <img className={c.wppImg}  src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848153/Climatizaciones/sxgo5xgsiqhu47mq1cek.png" alt="whatsapp de contratista de calderas" />
             </div>
 
             <div className={c.itemText}>
@@ -117,7 +118,7 @@ export default function Contacto(){
 
         <div className={c.item}>
             <div>
-            <img className={c.location} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729849749/Climatizaciones/tnbsrtl31gdvyes2gv7b.png" alt="" />
+            <img className={c.location} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729849749/Climatizaciones/tnbsrtl31gdvyes2gv7b.png" alt="dirección de empresa de climatización" />
             </div>
 
             <div className={c.itemText}>
@@ -183,7 +184,7 @@ export default function Contacto(){
        <div className={c.deskItem}>
          
          <div className={c.imgCont}>
-            <img className={c.phoneImg} src={phoneImg} alt="" />
+            <img className={c.phoneImg} src={phoneImg} alt="Teléfono de empresa de climatización" />
          </div>
 
          <div className={c.callTime}>Horario de Atención de:<br />8 a 19 hs</div>
@@ -200,6 +201,9 @@ export default function Contacto(){
    </div>
 
    </div>
+  
+   <Links/>
+
    <Footer/>
    </>)
 }

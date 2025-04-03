@@ -1,6 +1,5 @@
 import c from "./navnode.module.css";
 import clientsImg from "./clients.svg";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
 import { handleModalGeneric, handleModalCaldera, handleModalAire, handleModalHeladera, handleModalCalefaccion } from "./modalGeneric";
@@ -48,15 +47,15 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742202451/Tony%20Clima/w7w7begwagw2ww0ype4s.png" alt="" />
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742202451/Tony%20Clima/w7w7begwagw2ww0ype4s.png" alt="Caja de herramientas logo Climatizaciones Tony" />
         </div>
         
-        <Link className={c.link} to={home ? "/" : "/trabajos"} onClick={() => {
-        window.scrollTo(0, 0);}}>
+        <a className={c.link} href={home ? "https://climatizacionestony.com" : "https://climatizacionestony.com/trabajos"} /* onClick={() => {
+        window.scrollTo(0, 0);}} */>
         <div className={c.itemText}>
         {home ? <p>INICIO</p> : <p>TRABAJOS</p>}
         </div>
-        </Link>
+        </a>
         
       </div>
     </div>
@@ -74,7 +73,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669002/Tony%20Clima/cjukko5ujyvijaqmmbr7.png" alt="" />
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669002/Tony%20Clima/cjukko5ujyvijaqmmbr7.png" alt="aire acondicionado logo Climatizaciones Tony" />
         </div>
 
         <div  className={c.itemText}>
@@ -90,7 +89,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669005/Tony%20Clima/hd3gp1ty3aakgcbssnpy.png" alt="" />
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669005/Tony%20Clima/hd3gp1ty3aakgcbssnpy.png" alt="Heladeras logo mantenimiento y reparación Climatizaciones Tony" />
         </div>
 
         <div  className={c.itemText}>
@@ -106,7 +105,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img className={c.img4} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669042/Tony%20Clima/xzkib3i9fxyysiyatqms.png" alt="" />
+          <img className={c.img4} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669042/Tony%20Clima/xzkib3i9fxyysiyatqms.png" alt="Calderas logo, reparación instalación y mantenimiento Climatizaciones Tony" />
         </div>
 
         <div  className={c.itemText}>
@@ -116,7 +115,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
       <div className={c.sectCont}>
         <div className={c.imgCont}>
-          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669025/Tony%20Clima/aqpn0f056lc3kcgpgctw.png" alt="" />
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669025/Tony%20Clima/aqpn0f056lc3kcgpgctw.png" alt="logo de calefactor de tiro balanceado Climatizaciones Tony" />
         </div>
 
         <div  className={c.itemText}>
@@ -130,7 +129,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
 
     <div className={c.conoceSect}>
         <div className={c.conoceImg}>
-            <img src={clientsImg} alt="" />
+            <img src={clientsImg} alt="clientes felices logo de contratista de climatización Climatizaciones Tony" />
         </div>
 
         <div>

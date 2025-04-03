@@ -5,7 +5,7 @@
     background-size: cover;
     background-position: center;
     padding: 5rem 0rem ;
-    border-radius: 9px;
+    
     /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
     box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 6px 10px rgba(0, 0, 0, 0.5);
     
@@ -24,7 +24,8 @@
     /* ////// */
     display: flex;
     flex-direction: column;
-    padding: 4rem 0rem 2.1rem;
+    padding: 4rem 0rem 0rem;
+    /* padding: 4rem 0rem 2.1rem; */
 }
 
 .container p{
@@ -290,7 +291,6 @@ textarea {
         background-size: cover;
         background-position: center;
         padding: 1.7rem 0rem 3rem ;
-        border-radius: 9px;
         /* box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5); */
         box-shadow: inset 0px -7px 10px rgba(0, 0, 0, 0.5), inset 0px 6px 10px rgba(0, 0, 0, 0.5);
         display: flex;
@@ -448,11 +448,12 @@ textarea {
 
 @media (max-width: 545px) {
     .container{
-        padding: 3.5rem 0rem;
+        padding: 3.5rem 0rem 0rem;
     }
 
     .bg{
         width: 90%;
+        border-radius: 9px;
     }
     
     .formContainer{

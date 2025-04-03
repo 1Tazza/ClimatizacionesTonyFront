@@ -33,13 +33,13 @@ export default function OurWorksExtended() {
       <div className={c.imgContainer1}>
         <div className={c.img1Margin}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847549/Climatizaciones/o6qw04kagptsvt4iptir.png" data-lightbox="image-1" data-title="Nuestros Trabajos">
-        <img className={c.img1} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847549/Climatizaciones/o6qw04kagptsvt4iptir.png" alt="" loading="lazy"/>
+        <img className={c.img1} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847549/Climatizaciones/o6qw04kagptsvt4iptir.png" alt="Climatizaciones Tony imagen 1" loading="lazy"/>
         </a>
         </div>
         
         <div className={c.img2Margin}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268868/Climatizaciones/srutttxcqdkrildebzcc.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-        <img className={c.img2} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268868/Climatizaciones/srutttxcqdkrildebzcc.jpg" alt="" loading="lazy"/>
+        <img className={c.img2} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268868/Climatizaciones/srutttxcqdkrildebzcc.jpg" alt="Climatizaciones Tony imagen 2" loading="lazy"/>
         </a>
         </div>     
       </div>
@@ -48,12 +48,12 @@ export default function OurWorksExtended() {
 
        <div className={c.img3Margin}>
        <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268844/Climatizaciones/vvecl714rdnbrl4ittpk.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-        <img className={c.img3} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268844/Climatizaciones/vvecl714rdnbrl4ittpk.jpg" alt="" loading="lazy"/>
+        <img className={c.img3} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268844/Climatizaciones/vvecl714rdnbrl4ittpk.jpg" alt="Climatizaciones Tony imagen 3" loading="lazy"/>
         </a>
        </div>
        <div className={c.img4Margin}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268868/Climatizaciones/w511yb9nxmr3ea9o8rtd.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-        <img className={c.img4} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268868/Climatizaciones/w511yb9nxmr3ea9o8rtd.jpg" alt="" loading="lazy"/>
+        <img className={c.img4} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268868/Climatizaciones/w511yb9nxmr3ea9o8rtd.jpg" alt="Climatizaciones Tony imagen 4" loading="lazy"/>
         </a>
        </div>
       
@@ -73,25 +73,25 @@ export default function OurWorksExtended() {
       
       <div className={c.imgContainer3}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1742198425/Tony%20Clima/g1oy85lzcxyhanpydhcq.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-         <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742198425/Tony%20Clima/g1oy85lzcxyhanpydhcq.jpg" className={c.img5} alt="" loading="lazy" />
+         <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742198425/Tony%20Clima/g1oy85lzcxyhanpydhcq.jpg" className={c.img5} alt="Climatizaciones Tony imagen 5" loading="lazy" />
         </a>
       </div>
 
       <div className={c.imgContainer4}>
         <div className={c.img6Container}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1742198183/Tony%20Clima/ud7qapgftdybzi68ztzp.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742198183/Tony%20Clima/ud7qapgftdybzi68ztzp.jpg" className={c.img6} alt="" loading="lazy"/>
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742198183/Tony%20Clima/ud7qapgftdybzi68ztzp.jpg" className={c.img6} alt="Climatizaciones Tony imagen 6" loading="lazy"/>
           </a>
           </div>
         
         <div className={c.img7Container}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1730304481/Climatizaciones/ps98htekd1eeacbghjmt.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730304481/Climatizaciones/ps98htekd1eeacbghjmt.jpg" className={c.img7} alt="" loading="lazy"/>
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730304481/Climatizaciones/ps98htekd1eeacbghjmt.jpg" className={c.img7} alt="Climatizaciones Tony imagen 7" loading="lazy"/>
           </a>
           </div>
         <div className={c.img8Container}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847569/Climatizaciones/uox2ejqhnedrtqsavq5c.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847569/Climatizaciones/uox2ejqhnedrtqsavq5c.jpg" className={c.img8} alt="" loading="lazy"/>
+          <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847569/Climatizaciones/uox2ejqhnedrtqsavq5c.jpg" className={c.img8} alt="Climatizaciones Tony imagen 8" loading="lazy"/>
           </a>
           </div>
         
@@ -118,20 +118,20 @@ export default function OurWorksExtended() {
 
         <div className={c.img1Margin}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847558/Climatizaciones/rwlf4izwm6krenzcmm9d.png" data-lightbox="image-1" data-title="Nuestros Trabajos">
-        <img className={c.img1} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847558/Climatizaciones/rwlf4izwm6krenzcmm9d.png" alt="" loading="lazy"/>
+        <img className={c.img1} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729847558/Climatizaciones/rwlf4izwm6krenzcmm9d.png" alt="Climatizaciones Tony imagen 9" loading="lazy"/>
         </a>
         </div>
 
         <div className={c.img2Margin}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1730304480/Climatizaciones/ytzkpd7fxoplic3sno1z.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-        <img className={c.img2} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730304480/Climatizaciones/ytzkpd7fxoplic3sno1z.jpg" alt="" loading="lazy"/>
+        <img className={c.img2} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730304480/Climatizaciones/ytzkpd7fxoplic3sno1z.jpg" alt="Climatizaciones Tony imagen 10" loading="lazy"/>
         </a>
         </div>
       </div>
 
       <div className={c.imgContainer6}>
         <a href="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268844/Climatizaciones/purbwycmdovc7w1tf5ci.jpg" data-lightbox="image-1" data-title="Nuestros Trabajos">
-        <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268844/Climatizaciones/purbwycmdovc7w1tf5ci.jpg" className={c.img11} alt="" loading="lazy"/>
+        <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1730268844/Climatizaciones/purbwycmdovc7w1tf5ci.jpg" className={c.img11} alt="Climatizaciones Tony imagen 11" loading="lazy"/>
         </a>
       </div>
 

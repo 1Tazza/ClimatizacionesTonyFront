@@ -1,0 +1,93 @@
+.links{
+    border-bottom: 1px solid gray;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.7rem 2rem 3.5rem;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.container h2{
+    letter-spacing: 0.6px;
+    margin-bottom: 0.2rem;
+}
+
+.container ul li::marker {
+    color: #3662F3;
+}
+
+.logo{
+    width: 10rem;
+    height: 3rem;
+    
+}
+
+.logoContainer{
+    position: absolute;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.text5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    margin-left: 0.3rem;
+    margin-bottom: 0.2rem;
+   
+}
+
+.choose{
+    all: unset;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.chooseTitle{
+    border: solid 1px white;
+    width: 6rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    color:#ffffff;
+    text-align: center;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 850px) {
+
+    .container{
+        flex-direction: column;
+    }
+
+  
+    .container > div{
+        margin: 1rem
+    }
+
+    .logoContainer{
+        display: none;
+    }
+
+}
+    
+
+@media (max-width: 545px) {
+    .container h2{
+        font-size: 20px;
+    }
+
+    .container > div{
+        margin: 0.5rem 0.5rem;
+    }
+}

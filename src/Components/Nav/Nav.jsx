@@ -53,7 +53,7 @@ export default function Nav({home}){
     <div className={c.container}>
 
     <div onClick={toggleMenu} className={c.navItem}>
-        <img className={c.burgerNavImg} src={burgerNavImg} alt="" />
+        <img className={c.burgerNavImg} src={burgerNavImg} alt="Navegador para empresa de climatización" />
 
         <div className={`${c.explore} ${c.poppins}`}>
             Explorar
@@ -61,20 +61,21 @@ export default function Nav({home}){
     </div>
 
     <div className={c.logoCont}>
+    
     <div>
     <img className={c.logo} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742199686/Tony%20Clima/bjgoa3ycflcsppa4fdw1.png" alt="" />
     </div>
     
     <div className={c.titleCont}>
-    <img className={c.titleLogo} src={titleLogo} alt="" />
+    <img className={c.titleLogo} src={titleLogo} alt="Logo de Climatizaciones Tony" />
     </div>
-
+     
     </div>
 
     {home ? <Link className={`${c.link} ${c.linkT}`} to="/" onClick={() => {window.scrollTo(0, 0);}}>
     <div className={`${c.navItem} ${c.trabajosLink}`}>
         
-        <img className={c.houseImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742667742/Tony%20Clima/cgheg92zagmwmcbxibu0.png" alt="" />
+        <img className={c.houseImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742667742/Tony%20Clima/cgheg92zagmwmcbxibu0.png" alt="Inicio de empresa de climatización" />
 
         <div className={`${c.trabajos} ${c.poppins}`}>
         Inicio
@@ -83,7 +84,7 @@ export default function Nav({home}){
     </Link> : <Link className={`${c.link}`} to="/trabajos" onClick={() => {window.scrollTo(0, 0);}}>
     <div className={`${c.navItem} ${c.trabajosLink}`}>
         
-        <img className={c.valijaImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742589503/Tony%20Clima/afobsp6cqztalu4vxspc.png" alt="" />
+        <img className={c.valijaImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742589503/Tony%20Clima/afobsp6cqztalu4vxspc.png" alt="trabajos de empresa de climatización" />
 
         <div className={`${c.trabajos} ${c.poppins}`}>
         Trabajos
