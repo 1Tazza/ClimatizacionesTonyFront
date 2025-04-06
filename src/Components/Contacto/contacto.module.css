@@ -205,10 +205,10 @@ justify-content: center;
 font-size: 17px;
 }
 
-.mailText{
+/* .mailText{
     
 }
-
+ */
 .inputCont{
     display: flex;
     flex-direction: column;
