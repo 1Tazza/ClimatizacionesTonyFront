@@ -18,6 +18,7 @@
 
 }
 
+
 .text{
     font-size: 18px;
     font-weight: 300;
@@ -26,7 +27,12 @@
 
 .text ul li{
     padding-bottom: 0.7rem;
+    transition: transform 0.2s ease-in-out;
 }
+.text ul li:hover {
+    transform: scale(1.05); 
+}
+
 .bold{
     font-weight: 600;
 }

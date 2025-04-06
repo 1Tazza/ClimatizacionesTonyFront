@@ -1,0 +1,40 @@
+.descuentos{
+    padding-top: 0.6rem;
+}
+
+.container{
+    background-color: #168456b8;
+    display: flex;
+    justify-content: center;    
+}
+
+.display{
+    display: none;
+}
+
+.text{
+    width: 900px;
+    margin: 0.8rem 0rem;
+    cursor: default;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+.codigo{
+    cursor: pointer;
+}
+
+.transform {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.05); 
+}
+  

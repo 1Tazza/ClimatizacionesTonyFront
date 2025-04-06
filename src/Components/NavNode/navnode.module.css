@@ -40,6 +40,14 @@
     cursor: pointer;
 }
 
+.transform {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.05); 
+}
+
 /* .open {
      visibility: visible !important; 
     left: 0; 

@@ -23,6 +23,13 @@
     padding-bottom: 6rem;
 }
 
+.transform {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.1); 
+}
 
 .peisa{
     width: 9rem; 

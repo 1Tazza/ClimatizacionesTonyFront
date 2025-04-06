@@ -28,21 +28,21 @@ export default function Calderas(){
       <div className={c.brands}>
 
        <div className={c.imgCont1}>
-         <img className={c.peisa} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848408/Climatizaciones/zgm5clxa8rs1girqv9sn.webp" alt="Calderas Peisa"   loading="lazy"/>
-         <img className={`${c.baxi}`}  src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848569/Climatizaciones/hczxhbkbnin2y0htwkmu.png" alt=""   loading="lazy"/>
+         <img className={`${c.peisa} ${c.transform}`} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848408/Climatizaciones/zgm5clxa8rs1girqv9sn.webp" alt="Calderas Peisa"   loading="lazy"/>
+         <img className={`${c.baxi} ${c.transform}`}  src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848569/Climatizaciones/hczxhbkbnin2y0htwkmu.png" alt=""   loading="lazy"/>
        </div>
        
        <div className={c.imgCont2}>
-         <img className={c.ferroli} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848412/Climatizaciones/diavoxj0wjsz8hofhudl.png" alt="Calderas Ferroli"  loading="lazy"/>
-         <img className={c.caldaia} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848401/Climatizaciones/ed2h6hueiwum5komaxw8.png" alt="Calderas Caldaia"   loading="lazy"/>
+         <img className={`${c.ferroli} ${c.transform}`} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848412/Climatizaciones/diavoxj0wjsz8hofhudl.png" alt="Calderas Ferroli"  loading="lazy"/>
+         <img className={`${c.caldaia} ${c.transform}`} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848401/Climatizaciones/ed2h6hueiwum5komaxw8.png" alt="Calderas Caldaia"   loading="lazy"/>
        </div>
        
        <div className={c.imgCont3}>
-          <img className={c.ariston} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848584/Climatizaciones/z86fcvjedvmehbxryl69.png" alt="Calderas Ariston"   loading="lazy"/>
+          <img className={`${c.ariston} ${c.transform}`} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1729848584/Climatizaciones/z86fcvjedvmehbxryl69.png" alt="Calderas Ariston"   loading="lazy"/>
        </div>
        </div>
 
-      <div className={c.buttonCont}>
+      <div className={`${c.buttonCont}`}>
         <div onClick={scrollToContact} className={`${c.button} ${c.orange}`}>CONTACTANOS</div>
       </div>
         

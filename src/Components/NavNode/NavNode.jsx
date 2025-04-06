@@ -52,7 +52,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
         
         <a className={c.link} href={home ? "https://climatizacionestony.com" : "https://climatizacionestony.com/trabajos"} /* onClick={() => {
         window.scrollTo(0, 0);}} */>
-        <div className={c.itemText}>
+        <div className={`${c.itemText} ${c.transform}`}>
         {home ? <p>INICIO</p> : <p>TRABAJOS</p>}
         </div>
         </a>
@@ -76,7 +76,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
           <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669002/Tony%20Clima/cjukko5ujyvijaqmmbr7.png" alt="aire acondicionado logo Climatizaciones Tony" />
         </div>
 
-        <div  className={c.itemText}>
+        <div className={`${c.itemText} ${c.transform}`}>
           <p className={c.pointer} onClick={() => toggleModal(handleModalAire)}>AIRE ACONDICIONADO</p>
         </div>
       </div>
@@ -92,7 +92,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
           <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669005/Tony%20Clima/hd3gp1ty3aakgcbssnpy.png" alt="Heladeras logo mantenimiento y reparación Climatizaciones Tony" />
         </div>
 
-        <div  className={c.itemText}>
+        <div  className={`${c.itemText} ${c.transform}`}>
           <p className={c.pointer} onClick={() => toggleModal(handleModalHeladera)}>HELADERAS</p>
         </div>
       </div>
@@ -108,7 +108,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
           <img className={c.img4} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669042/Tony%20Clima/xzkib3i9fxyysiyatqms.png" alt="Calderas logo, reparación instalación y mantenimiento Climatizaciones Tony" />
         </div>
 
-        <div  className={c.itemText}>
+        <div className={`${c.itemText} ${c.transform}`}>
           <p className={c.pointer} onClick={() => toggleModal(handleModalCaldera)}>CALDERAS</p>
         </div>
       </div>
@@ -118,7 +118,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
           <img src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742669025/Tony%20Clima/aqpn0f056lc3kcgpgctw.png" alt="logo de calefactor de tiro balanceado Climatizaciones Tony" />
         </div>
 
-        <div  className={c.itemText}>
+        <div className={`${c.itemText} ${c.transform}`}>
           <p className={c.pointer} onClick={() => toggleModal(handleModalCalefaccion)}>CALEFACTOR DE TIRO BALANCEADO</p>
         </div>
       </div>
@@ -139,7 +139,7 @@ export default function NavNode({isOpen, setIsOpen, home}){
             
             <div className={c.buttonCont}>
             
-           <div onClick={() => toggleModal(handleModalGeneric)} className={`${c.button} ${c.orange} ${c.pointer}`}>Conocé más</div>
+           <div onClick={() => toggleModal(handleModalGeneric)} className={`${c.button} ${c.orange} ${c.pointer} ${c.transform}`}>Conocé más</div>
            
             </div>
         </div>

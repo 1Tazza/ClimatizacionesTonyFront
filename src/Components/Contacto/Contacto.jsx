@@ -1,27 +1,36 @@
 import c from "./contacto.module.css";
 import { useState, useRef } from "react";
+import  config, { isCuponAvailable }from "../../config";
 import validations from "./validations";
 import axios from "axios";
 import phoneImg from "./logo1.svg";
 import ReCAPTCHA from "react-google-recaptcha";
 import Footer from "../Footer/Footer";
-import Links from "../Links/Links"
+import Links from "../Links/Links";
 
 export default function Contacto(){
     const recaptchaRef = useRef(null); // Referencia para el reCAPTCHA
     const [captchaError, setCaptchaError] = useState("");
-    
+    const code = config.couponCode;
     
     const [captchaValido, setCaptchaValido] = useState(false) 
     const [touched, setTouched] = useState({});
-    const [errors,setErrors] = useState({})
+    const [errors,setErrors] = useState({});
+    const [cupon, setCupon] = useState(false);
+    const [cuponValidation, setCuponValidation] = useState(null);
+   
 
     const [form, setForm] = useState({
         name: "",
         email: "",
         number: "",
         servicio: "",
-        message: ""
+        message: "",
+        cupon: false
+        });
+
+    const [cuponForm, setCuponForm] = useState({
+        cupon: ""
         });
 
     function onChange(value) {
@@ -37,7 +46,36 @@ export default function Contacto(){
     function onClick(e){
         setTouched({...touched, [e.target.name]: true})
      }
+    
+    function handleCupon(){
+        if(cupon === true) {
+        setCuponValidation(null);
+        setCuponForm({
+            cupon: ""
+            });
+        }
+        setCupon(!cupon);
+        
+    }
    
+    function handleSendCupon(){
+        const available = isCuponAvailable();
+        const value = cuponForm.cupon === code;
+        
+        const result =  available && value;
+        if(cuponForm.cupon === "") {
+            setCuponValidation(null)
+        }
+        else if(result) {
+            setCuponValidation(true)
+            setForm({...form,
+                cupon: true
+                });
+        }
+        else if(result === false){
+            setCuponValidation(false)
+        }
+    }
    
     function handleInputChange(e) {
         e.preventDefault();
@@ -46,6 +84,13 @@ export default function Contacto(){
         setErrors(validations(
            {...form, [e.target.name]: e.target.value}, touched
            ))
+     }
+
+     function handleChangeCupon(e) {
+        e.preventDefault();
+        setCuponForm({...cuponForm, [e.target.name]: e.target.value});
+        
+        
      }
 
      async function handleSubmit() {
@@ -65,8 +110,12 @@ export default function Contacto(){
                  email: "",
                  number: "",
                  servicio: "",
-                 message: ""
+                 message: "",
+                 cupon: false
              });
+                setCuponForm({
+                cupon: ""
+                });
 
              recaptchaRef.current.reset();
              setCaptchaValido(false);
@@ -160,6 +209,22 @@ export default function Contacto(){
 
      <textarea name="message" value={form.message} id="" cols="30" rows="4" placeholder="Tu Problema..." onChange={(e) => handleInputChange(e)}></textarea>
      
+     <div className={c.descuentos}>
+      {cuponValidation ? <p className={c.green}>Cupón Canjeado!!</p> :  <div className={c.contents}>
+      <p className={c.cuponCont} onClick={handleCupon}>¿Tenés un cupón de descuento?</p>
+      {cupon ? <div className={c.promoCont}>
+        <input type="text" onClick={onClick} onChange={(e) => handleChangeCupon(e)} name="cupon" id="cupon" placeholder="Ingresa el código..."/>
+
+        <button onClick={handleSendCupon} className={c.buttonPromo}>Aplicar</button>
+
+      </div> : null}
+       {cuponValidation === false ? <p className={c.red}>Código Inválido</p> : cuponValidation === null ? null: null}
+
+      </div> }
+      
+      
+     </div>
+
      <div className={c.cache}>
        <ReCAPTCHA
        ref={recaptchaRef}

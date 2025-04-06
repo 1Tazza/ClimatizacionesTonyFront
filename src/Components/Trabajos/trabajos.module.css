@@ -47,6 +47,7 @@
 }
 
 
+
 .img{
     width: 15.5rem;
     height: 23.5rem;
@@ -54,6 +55,7 @@
     border-radius: 9px;
     box-shadow: -2px 0px 3.7px #ffffff38, 3px -1px 3.7px #ffffff38;
     margin-bottom: 3rem;
+    
 }
 
 .imgs svg {

@@ -17,7 +17,7 @@ export default function InicioAlt(){
     
     <div className={c.leftCont}>
 
-     <div className={c.h1}>
+    <div className={`${c.h1} ${c.transform}`}>
         <h1>TRABAJOS</h1>
      </div>
 
@@ -28,20 +28,20 @@ export default function InicioAlt(){
      </div>
 
      <div className={c.items}>
-        <div className={c.item1}>
+        <div className={`${c.item1} ${c.transformH}`}>
             <span className={c.logo}>
             <img src={logo1} alt="phone icono" />
             </span>
             <div className={c.text}>Atención Inmediata</div>
         </div>
-        <div className={c.item2}>
+        <div className={`${c.item2} ${c.transformH}`}>
             <span className={c.logo}>
                 <img src={logo2} alt="money icono" />
             </span>
             <div className={c.text}>Ofertas
 Imperdibles</div>
         </div>
-        <div className={c.item3}>
+        <div className={`${c.item3} ${c.transformH}`}>
             <span className={c.logo}>
                 <img src={logo3} alt="community icono" />
             </span>
@@ -51,7 +51,7 @@ Imperdibles</div>
 
      <div className={c.buttonCont}>
 
-     <div onClick={scrollToContact} className={c.button}>
+     <div onClick={scrollToContact} className={`${c.button} ${c.transform}`}>
      <span>@</span> Contactanos 
      </div>
      

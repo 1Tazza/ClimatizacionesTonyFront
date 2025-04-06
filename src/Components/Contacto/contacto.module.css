@@ -111,7 +111,9 @@
     border-radius: 10px;
     font-size: 15px;
     font-weight: 500;
+    transition: transform 0.2s ease-in-out;
 }
+
 
 .buttonCont{
     display: flex;
@@ -121,10 +123,67 @@
 
 .button:hover{
     cursor: pointer;
+    transform: scale(1.05); 
 }
 
 .button:disabled{
     opacity: 0.6;
+    cursor: unset;
+    transform: unset; 
+}
+
+.descuentos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0.3rem;
+}
+
+.descuentos input{
+    width: 10rem !important;
+    
+}
+
+
+.cuponCont{
+    cursor: pointer;
+}
+
+.promoCont{
+    display: flex
+;
+    align-items: center;
+    flex-direction: row;
+}
+.buttonPromo{
+    all: unset;
+    height: 2.2rem;
+    background-color: #200a2fe4;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 4.5rem;
+    font-weight: 500;
+    margin-left: 0.7rem;
+    transition: transform 0.2s ease-in-out;
+    
+}
+.buttonPromo:hover{
+    cursor: pointer;
+    transform: scale(1.05); 
+}
+
+.contents{
+    display: contents;
+}
+.green{
+    color: #0dc97bb8;
+    font-weight: 600;
+}
+
+.red{
+    color: #8c1704de;
+    font-weight: 600;
 }
 
 .items{
@@ -311,6 +370,18 @@ textarea {
     .text p{
         width: 400px;
     }
+
+    .descuentos{
+        
+        align-items: center;
+    }
+    
+    .descuentos input{
+        width: 9.1rem !important;
+        padding-left: 0.5rem !important;
+    }
+
+    
 
     .line{
         width: 100%;

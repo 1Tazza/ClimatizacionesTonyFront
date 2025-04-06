@@ -47,7 +47,7 @@ export default function Links(){
 
             <p>08:00 - 21:00</p>
           <div className={c.contactar}>
-          <div className={c.chooseTitle}>
+          <div className={`${c.chooseTitle} ${c.transform} `}>
           <a href="https://wa.link/4esc8w" style={{all: "unset"}} target="_blank" rel="noreferrer">Contactar</a>
             </div>
          </div>

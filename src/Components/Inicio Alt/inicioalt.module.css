@@ -89,6 +89,22 @@ text-align: left;
 
 }
 
+.transform {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.05); 
+}
+
+.transformH {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transformH:hover {
+    transform: scale(1.2); 
+}
+
 .p p{
     font-size: 20px;
 /* ////// */ padding: 1rem 0rem;

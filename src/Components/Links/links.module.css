@@ -51,6 +51,13 @@
     cursor: pointer;
 }
 
+.transform {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.1); 
+}
 
 .chooseTitle{
     border: solid 1px white;
@@ -63,6 +70,7 @@
     margin-top: 2.5rem;
     cursor: pointer;
 }
+
 
 @media (max-width: 850px) {
 

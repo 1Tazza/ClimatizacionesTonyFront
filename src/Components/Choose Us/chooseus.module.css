@@ -42,6 +42,15 @@
         font-weight:650 ;
         letter-spacing: 1px;
         margin-bottom: 2.5rem;
+        cursor: default;
+}
+
+.transform {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.1); 
 }
 
 .text {
@@ -55,6 +64,7 @@
 .text p {
     /* /////////// */
     width: 500px;
+   
 }
 
 .text span{

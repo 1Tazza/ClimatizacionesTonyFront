@@ -36,6 +36,14 @@
     margin-right: 3rem;
 }
 
+.transform {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transform:hover {
+    transform: scale(1.1); 
+}
+
 .aboutText{
     display: none;
 }
@@ -45,6 +53,7 @@
     font-size: 27px;
     font-weight:600 ;
     letter-spacing: 1px;
+    cursor: default;
 }
 
 .text {
@@ -67,6 +76,7 @@
     /* ////// */ 
     margin: 1rem 2rem 1rem 0rem;
     width: 400px;
+    
 }
 
 .text span{
@@ -172,6 +182,11 @@
 @media (max-width: 550px) {
     .text p{
     padding: 0.3rem 1.5rem;
+    }
+
+    .transform:hover {
+    
+    transform: scale(1.05);
     }
 }
 

@@ -33,12 +33,12 @@ export default function Services(){
         <p>Climatización</p>
       </div>
 
-      <div className={c.title}>
-        <p>Aire Acondicionado</p>
+      <div className={`${c.title}`}>
+        <p className={c.transform}>Aire Acondicionado</p>
       </div>
 
       <div className={c.description}>
-        <p>Instalación, reparación y mantenimiento de Aire Acondicionado. <br/><br/></p>
+        <p className={c.transform}>Instalación, reparación y mantenimiento de Aire Acondicionado. <br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>
@@ -53,11 +53,11 @@ export default function Services(){
       </div>
 
       <div className={c.title}>
-        <p>Calderas</p>
+        <p className={c.transform}>Calderas</p>
       </div>
 
       <div className={c.description}>
-        <p>Instalación, reparación y mantenimiento de Calderas de TODAS las Marcas! <br/><br/></p>
+        <p className={c.transform}>Instalación, reparación y mantenimiento de Calderas de TODAS las Marcas! <br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>
@@ -76,11 +76,11 @@ export default function Services(){
       </div>
 
       <div className={c.title}>
-        <p>Heladeras</p>
+        <p className={c.transform}>Heladeras</p>
       </div>
 
       <div className={`${c.description} ${c.fridgeDiv}`}>
-        <p>Reparación de Heladeras. <br/><br/><br/></p>
+        <p className={c.transform}>Reparación de Heladeras. <br/><br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>
@@ -95,11 +95,11 @@ export default function Services(){
       </div>
 
       <div className={c.title}>
-        <p>Calefactores</p>
+        <p className={c.transform}>Calefactores</p>
       </div>
 
       <div className={c.description}>
-        <p>Instalación, Reparación y Mantenimiento de Calefactores de Tiro Balanceado. <br/><br/></p>
+        <p className={c.transform}>Instalación, Reparación y Mantenimiento de Calefactores de Tiro Balanceado. <br/><br/></p>
       </div>
 
       <div className={c.buttonCont}>

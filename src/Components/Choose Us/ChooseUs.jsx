@@ -9,11 +9,11 @@ export default function ChooseUs(){
 
    <div className={c.content}>
 
-     <div className={c.title}>¿Por qué elegirnos?</div>
+     <div className={`${c.title} ${c.transform}`}>¿Por qué elegirnos?</div>
      
      <div className={c.text}>
          
-     <p>En CLIMATIZACIONES TONY, ofrecemos instalación, reparación y mantenimiento de Aire Acondicionado, Calderas, Heladeras y Calefactores, con técnicos especializados en cada área. Además contamos con <span>DESCUENTOS</span> periódicos para que accedas a la mejor calidad al mejor precio.</p>
+     <p >En CLIMATIZACIONES TONY, ofrecemos instalación, reparación y mantenimiento de Aire Acondicionado, Calderas, Heladeras y Calefactores, con técnicos especializados en cada área. Además contamos con <span>DESCUENTOS</span> periódicos para que accedas a la mejor calidad al mejor precio.</p>
      
      </div> 
      

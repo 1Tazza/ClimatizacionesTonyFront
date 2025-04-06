@@ -9,7 +9,7 @@ export default function Compromise(){
 
    <div className={c.content}>
 
-     <div className={c.title}>Nuestro Compromiso</div>
+     <div className={`${c.title} ${c.transform}`}>Nuestro Compromiso</div>
      
      <div className={c.text}>
          

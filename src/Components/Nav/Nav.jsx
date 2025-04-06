@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import burgerNavImg from "./burgerNav.svg"
 import NavNode from "../NavNode/NavNode";
 import titleLogo from "./titleLogo.svg";
+import Descuentos from "../Descuentos/Descuentos";
 
 
 export default function Nav({home}){
@@ -53,9 +54,9 @@ export default function Nav({home}){
     <div className={c.container}>
 
     <div onClick={toggleMenu} className={c.navItem}>
-        <img className={c.burgerNavImg} src={burgerNavImg} alt="Navegador para empresa de climatización" />
+        <img className={`${c.burgerNavImg} ${c.transform}`} src={burgerNavImg} alt="Navegador para empresa de climatización" />
 
-        <div className={`${c.explore} ${c.poppins}`}>
+        <div className={`${c.explore} ${c.poppins} ${c.transform}`}>
             Explorar
         </div>
     </div>
@@ -75,24 +76,26 @@ export default function Nav({home}){
     {home ? <Link className={`${c.link} ${c.linkT}`} to="/" onClick={() => {window.scrollTo(0, 0);}}>
     <div className={`${c.navItem} ${c.trabajosLink}`}>
         
-        <img className={c.houseImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742667742/Tony%20Clima/cgheg92zagmwmcbxibu0.png" alt="Inicio de empresa de climatización" />
+        <img className={`${c.houseImg} ${c.transform}`} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742667742/Tony%20Clima/cgheg92zagmwmcbxibu0.png" alt="Inicio de empresa de climatización" />
 
-        <div className={`${c.trabajos} ${c.poppins}`}>
+        <div className={`${c.trabajos} ${c.poppins} ${c.transform}`}>
         Inicio
         </div>
     </div>
     </Link> : <Link className={`${c.link}`} to="/trabajos" onClick={() => {window.scrollTo(0, 0);}}>
     <div className={`${c.navItem} ${c.trabajosLink}`}>
         
-        <img className={c.valijaImg} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742589503/Tony%20Clima/afobsp6cqztalu4vxspc.png" alt="trabajos de empresa de climatización" />
+        <img className={`${c.valijaImg} ${c.transform}`} src="https://res.cloudinary.com/dapq4icmj/image/upload/v1742589503/Tony%20Clima/afobsp6cqztalu4vxspc.png" alt="trabajos de empresa de climatización" />
 
-        <div className={`${c.trabajos} ${c.poppins}`}>
+        <div className={`${c.trabajos} ${c.poppins} ${c.transform}`}>
         Trabajos
         </div>
     </div>
     </Link>} 
 
     </div>
+
+    <Descuentos/>
     </div>
 
 
