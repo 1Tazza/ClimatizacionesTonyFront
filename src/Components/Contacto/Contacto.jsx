@@ -117,6 +117,8 @@ export default function Contacto(){
                 cupon: ""
                 });
 
+                setCuponValidation(null);
+
              recaptchaRef.current.reset();
              setCaptchaValido(false);
             }
@@ -213,7 +215,7 @@ export default function Contacto(){
       {cuponValidation ? <p className={c.green}>Cupón Canjeado!!</p> :  <div className={c.contents}>
       <p className={c.cuponCont} onClick={handleCupon}>¿Tenés un cupón de descuento?</p>
       {cupon ? <div className={c.promoCont}>
-        <input type="text" onClick={onClick} onChange={(e) => handleChangeCupon(e)} name="cupon" id="cupon" placeholder="Ingresa el código..."/>
+        <input type="text" onClick={onClick} onChange={(e) => handleChangeCupon(e)} value={cuponForm.cupon} name="cupon" id="cupon" placeholder="Ingresa el código..."/>
 
         <button onClick={handleSendCupon} className={c.buttonPromo}>Aplicar</button>
 

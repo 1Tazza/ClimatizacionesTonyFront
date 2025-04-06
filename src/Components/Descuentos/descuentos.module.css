@@ -6,7 +6,10 @@
     background-color: #168456b8;
     display: flex;
     justify-content: center;    
+    
 }
+
+
 
 .display{
     display: none;
@@ -16,7 +19,10 @@
     width: 900px;
     margin: 0.8rem 0rem;
     cursor: default;
+    animation: scrollText 15s linear infinite;
 }
+
+
 
 .bold{
     font-weight: 600;
@@ -38,3 +44,64 @@
     transform: scale(1.05); 
 }
   
+
+@media (max-width: 1030px) {
+
+    .container{
+        position: absolute;
+    }
+
+    .text{
+        width: 1450px;
+        animation: scrollText 20s linear infinite;
+    }
+
+    @keyframes scrollText {
+        0% {
+          transform: translateX(55%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+}
+
+@media (max-width: 700px) {
+
+
+    .text{
+        animation: scrollText 20s linear infinite;
+    }
+
+    @keyframes scrollText {
+        0% {
+          transform: translateX(30%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+}
+
+
+
+@media (max-width: 400px) {
+
+
+    .text{
+        width: 1450px;
+        animation: scrollText 20s linear infinite;
+    }
+
+    @keyframes scrollText {
+        0% {
+          transform: translateX(25%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+}

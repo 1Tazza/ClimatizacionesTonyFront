@@ -6,7 +6,7 @@ const config = {
 export function isCuponAvailable() {
   const today = new Date();
   const day = today.getDay();
-  return day >= 0 && day <= 4; 
+  return day >= 2 && day <= 4; 
 }  
   
 export default config;
