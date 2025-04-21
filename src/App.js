@@ -13,7 +13,7 @@ function App() {
 
       <Routes>
      
-      <Route Component={Home} exact path='/'/>
+      <Route Component={Home} exact path='/home'/>
       
       <Route Component={SectionTrabajos} exact path='/trabajos'/>
 
