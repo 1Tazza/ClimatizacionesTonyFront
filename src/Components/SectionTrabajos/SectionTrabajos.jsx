@@ -6,7 +6,6 @@ import Calderas from "../Calderas/Calderas";
 import c from "./sectiontrabajos.module.css";
 import Compromise from "../Compromise/Compromise";
 import SeoTrabajos from "../SeoTrabajos/SeoTrabajos";
-import Contacto from "../Contacto/Contacto";
 
 
 export default function SectionTrabajos(){
@@ -26,8 +25,6 @@ return(<div className={c.sectionTrabajos}>
        <Compromise/>
 
        <SeoTrabajos/>
-
-       <Contacto/>
        
        </div>)
 }
