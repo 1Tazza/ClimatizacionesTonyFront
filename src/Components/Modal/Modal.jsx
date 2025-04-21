@@ -1,5 +1,6 @@
 import c from "./modal.module.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import validations from "./../Contacto/validations";
 import axios from "axios";
 
@@ -9,6 +10,7 @@ export default function Modal({isModal, setIsModal, titleGen, textBold, textGen,
    const [captchaError, setCaptchaError] = useState("");
 
     const [captchaValido, setCaptchaValido] = useState(false)  */
+    const navigate = useNavigate();
     const [touched, setTouched] = useState({});
     const [errors,setErrors] = useState({})
 
@@ -69,6 +71,7 @@ export default function Modal({isModal, setIsModal, titleGen, textBold, textGen,
               });
                   /* recaptchaRef.current.reset();
                   setCaptchaValido(false); */
+                  navigate('/formEnviado');
              }
          } catch (error) {
              console.error("Error al enviar el formulario:", error);

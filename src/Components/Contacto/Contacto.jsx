@@ -124,7 +124,7 @@ export default function Contacto(){
              recaptchaRef.current.reset();
              setCaptchaValido(false);
 
-             navigate('/trabajos');
+             navigate('/formEnviado');
             }
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
