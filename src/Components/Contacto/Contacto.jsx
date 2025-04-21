@@ -94,6 +94,19 @@ export default function Contacto(){
         
      }
 
+     /* function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        window.dataLayer.gtag('event', 'conversion', {
+            'send_to': 'AW-17024624245/MjtKCOj13rsaEPXM_LU_',
+            'event_callback': callback
+        });
+        return false;
+      } */
+
      async function handleSubmit() {
             if (!captchaValido) {
                 setCaptchaError("Por favor, completa el reCAPTCHA antes de enviar.");
@@ -119,17 +132,28 @@ export default function Contacto(){
                 });
 
                 setCuponValidation(null);
+                
 
              recaptchaRef.current.reset();
              setCaptchaValido(false);
 
+             if (typeof window.gtag === "function") {
+                window.gtag('event', 'conversion', {
+                  'send_to': 'AW-17024624245/MjtKCOj13rsaEPXM_LU_'
+                });
+                
+              } else {Error("Evento gtag no disparado.")} 
+        
+             
             }
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
             alert("Hubo un error al enviar el formulario.");
         }
     }
-
+  
+    
+    
    return(<><div id="contactSection" className={c.conctacto}>
  
    <div className={c.container}>
