@@ -6,6 +6,7 @@ import Services from "../Services/Services"
 import Trabajos from "../Trabajos/Trabajos"
 import Nav from "../Nav/Nav"
 import SeoHome from "../SeoHome/SeoHome"
+import Contacto from "../Contacto/Contacto"
 
 export default function Home(){
 
@@ -28,6 +29,8 @@ export default function Home(){
    <ChooseUs/>
 
    <SeoHome/>
+
+   <Contacto/>
 
    </div>)
 }
