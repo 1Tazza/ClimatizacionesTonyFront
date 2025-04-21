@@ -1,5 +1,6 @@
 import c from "./contacto.module.css";
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import  config, { isCuponAvailable }from "../../config";
 import validations from "./validations";
 import axios from "axios";
@@ -9,6 +10,7 @@ import Footer from "../Footer/Footer";
 import Links from "../Links/Links";
 
 export default function Contacto(){
+    const navigate = useNavigate();
     const recaptchaRef = useRef(null); // Referencia para el reCAPTCHA
     const [captchaError, setCaptchaError] = useState("");
     const code = config.couponCode;
@@ -121,6 +123,8 @@ export default function Contacto(){
 
              recaptchaRef.current.reset();
              setCaptchaValido(false);
+
+             navigate('/trabajos');
             }
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
