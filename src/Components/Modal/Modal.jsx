@@ -70,6 +70,11 @@ export default function Modal({isModal, setIsModal, titleGen, textBold, textGen,
               });
                   /* recaptchaRef.current.reset();
                   setCaptchaValido(false); */
+                  
+                  /* window.dataLayer.push({
+                     event: 'conversion',
+                     send_to: 'AW-17024624245/MjtKCOj13rsaEPXM_LU_'
+                   }); */
              }
          } catch (error) {
              console.error("Error al enviar el formulario:", error);

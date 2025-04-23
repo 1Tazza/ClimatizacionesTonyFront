@@ -127,6 +127,14 @@ export default function Contacto(){
                  message: "",
                  cupon: false
              });
+             /* window.dataLayer.push({
+                event: 'conversion',
+                send_to: 'AW-17024624245/MjtKCOj13rsaEPXM_LU_'
+              }); */
+              /* window.gtag('event', 'conversion', {
+                'send_to': 'AW-17024624245/MjtKCOj13rsaEPXM_LU_'
+              }); */
+
                 setCuponForm({
                 cupon: ""
                 });
@@ -142,8 +150,9 @@ export default function Contacto(){
                   'send_to': 'AW-17024624245/MjtKCOj13rsaEPXM_LU_'
                 });
                 
-              } else {Error("Evento gtag no disparado.")} 
+              } else {console.error("Evento gtag no disparado.")} 
         
+              
              
             }
         } catch (error) {
@@ -152,7 +161,6 @@ export default function Contacto(){
         }
     }
   
-    
     
    return(<><div id="contactSection" className={c.conctacto}>
  
