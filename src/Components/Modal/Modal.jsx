@@ -68,6 +68,15 @@ export default function Modal({isModal, setIsModal, titleGen, textBold, textGen,
                   servicio: "",
                   message: ""
               });
+              
+              if (typeof window.gtag === "function") {
+               window.gtag('event', 'conversion', {
+                 'send_to': 'AW-17024624245/MjtKCOj13rsaEPXM_LU_'
+               });
+               
+             } else {console.error("Evento gtag no disparado.")} 
+       
+             
                   /* recaptchaRef.current.reset();
                   setCaptchaValido(false); */
                   
